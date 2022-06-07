@@ -129,6 +129,10 @@ body {
   z-index: 7;
 }
 
+.header .headerContent .material svg {
+  pointer-events: none;
+}
+
 .header .headerContent .material img {
   max-width: 100%;
   height: auto;
