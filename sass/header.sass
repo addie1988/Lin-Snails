@@ -104,7 +104,7 @@ body
                 height: 100%
                 z-index: 7
             svg
-                pointer-events: none    
+                pointer-events: none
             img
                 max-width: 100%
                 height: auto
@@ -135,11 +135,14 @@ body
 
                     40%, 60%
                         transform: translate3d(4px, 0, 0)
+@media screen and (max-width: 1532px)
+    .header
+        .headerContent
+            overflow: hidden
 @media screen and (max-width: 1364px)
     .header
         .headerContent
             width: 100%
-            overflow: hidden
             .navbar
                 width: 100%
                 .navbarContent

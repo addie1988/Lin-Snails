@@ -23,7 +23,7 @@
     speed: 1,
     delay: 70,
 
-    // CALLBACKS
+    // CBACKS
     onCarouselTickerLoad: function () {},
   };
 
@@ -100,7 +100,7 @@
     };
 
     /**
-     * Performs all DOM and CSS modifications
+     * Performs  DOM and CSS modifications
      */
 
     var _setup = function () {
@@ -166,7 +166,7 @@
 
         // set true to initialize value
         ticker.isInitialize = true;
-        // onSliderLoad callback
+        // onSliderLoad cback
         ticker.settings.onCarouselTickerLoad();
         // start add functionality
         _start();
@@ -282,14 +282,14 @@
       if (ticker.isMousemove) {
         // off event behaviour mousemove
         ticker.$list.off(ticker.eventTypes.mousemove);
-        // call event mouseup
+        // c event mouseup
         ticker.$list.trigger(ticker.eventTypes.mouseup);
       }
       // if ticker width > outer width block
       if (condition) {
         // protection from double setInterval
         if (ticker.intervalPointer) return;
-        // call _moveTicker
+        // c _moveTicker
         ticker.intervalPointer = setInterval(function () {
           _moveTicker();
         }, ticker.settings.delay);
@@ -457,7 +457,7 @@
 
     el.destructor = function () {
       var $clones = $el.find("." + ticker.cloneCls);
-      // remove all clone items from dom
+      // remove  clone items from dom
       $clones.remove();
 
       var $tickerWrapper = $el.find("." + ticker.wrapCls);
@@ -474,7 +474,7 @@
     };
 
     /**
-     * Reload the ticker (revert all DOM changes, and re-initialize)
+     * Reload the ticker (revert  DOM changes, and re-initialize)
      */
     el.reloadCarouselTicker = function (settings) {
       if (settings != undefined) options = settings;

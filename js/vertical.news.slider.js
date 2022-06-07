@@ -22,7 +22,7 @@ $(function () {
           indexEl = 1,
                 i = null;
 
-  // the css animation gets added dynamicallly so 
+  // the css animation gets added dynamicly so 
   // that the news item sizes are measured correctly
   // (i.e. not in mid-animation)
   // Also, appending the highlight item to keep HTML clean
@@ -73,7 +73,7 @@ $(function () {
       newsListItems.removeClass('selected');
       $(this).addClass('selected');
 
-      siblings = $(this).prevAll();
+      siblings = $(this).prev();
       totalHeight = 0;
 
       // this loop calculates the height of individual elements, including margins/padding
@@ -83,7 +83,7 @@ $(function () {
         totalHeight += vMargin;
       }
 
-      // this moves the highlight vertically the distance calculated in the previous loop
+      // this moves the highlight verticy the distance calculated in the previous loop
       // and also corrects the height of the highlight to match the current selection
       hl.css({
         top: totalHeight,
@@ -97,7 +97,7 @@ $(function () {
 
       clearInterval(myTimer);
       // comment out doTimedSwitch() if you don't
-      // want it to rotate automatically
+      // want it to rotate automaticy
       doTimedSwitch();
       doEqualHeight(indexEl);
     });

@@ -1,7 +1,7 @@
 /* http://meyerweb.com/eric/tools/css/reset/
  * v2.0 | 20110126
  * License: none (public domain) */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, sm, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -558,10 +558,15 @@ body {
   }
 }
 
+@media screen and (max-width: 1532px) {
+  .header .headerContent {
+    overflow: hidden;
+  }
+}
+
 @media screen and (max-width: 1364px) {
   .header .headerContent {
     width: 100%;
-    overflow: hidden;
   }
   .header .headerContent .navbar {
     width: 100%;
@@ -988,10 +993,10 @@ body {
 }
 
 .service .serviceContent .news-holder .news-headlines li .nh-anim {
-  -webkit-transition: all .75s ease-out;
-  -moz-transition: all .75s ease-out;
-  -o-transition: all .75s ease-out;
-  transition: all .75s ease-out;
+  -webkit-transition: .75s ease-out;
+  -moz-transition: .75s ease-out;
+  -o-transition: .75s ease-out;
+  transition: .75s ease-out;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -o-transform: translateZ(0);
