@@ -25,7 +25,6 @@ body {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
   width: 1366px;
   padding: 60px 0 0 0;
 }
@@ -172,6 +171,7 @@ body {
 @media screen and (max-width: 1364px) {
   .header .headerContent {
     width: 100%;
+    overflow: hidden;
   }
   .header .headerContent .navbar {
     width: 100%;
