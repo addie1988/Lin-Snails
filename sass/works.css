@@ -855,7 +855,7 @@ body {
 .main .mainContent #works .works-content .jprt-container .jprt-item .layout #project_area .project_areaSlogan {
   position: relative;
   overflow: hidden;
-  top: 120px;
+  top: 0;
 }
 
 .main .mainContent #works .works-content .jprt-container .jprt-item .layout #project_area .project_areaSlogan svg {
@@ -1210,7 +1210,7 @@ body {
 
 @media screen and (max-width: 900px) {
   .main .mainContent #works .works-content .container-fluid .jprt-container .jprt-item .layout #project_area .project_areaSlogan {
-    top: -27px;
+    top: 0;
   }
   .main .mainContent #works .works-content .container-fluid .jprt-container .jprt-item .layout #project_area .project_areaSlogan svg {
     width: 7000%;

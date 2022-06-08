@@ -1492,7 +1492,7 @@ body {
 .work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaSlogan {
   position: relative;
   overflow: hidden;
-  top: 160px;
+  top: 0;
 }
 
 .work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaSlogan svg {
@@ -1547,7 +1547,7 @@ body {
 .work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaSlogan {
   position: relative;
   overflow: hidden;
-  top: -18px;
+  top: 0;
 }
 
 .work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaSlogan svg {
@@ -1951,7 +1951,7 @@ body {
     grid-row: 2 / 3;
   }
   .work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaSlogan {
-    top: 140px;
+    top: 0;
   }
   .work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaSlogan svg {
     width: 7000%;
