@@ -1252,7 +1252,7 @@ body {
   }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 800px) {
   .service .serviceContent {
     padding: 60px 0;
   }
