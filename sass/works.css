@@ -724,6 +724,8 @@ body {
 
 .main .mainContent #works .works-content .container-fluid .jprt-buttons .container-fluidImg {
   position: absolute;
+  left: 0;
+  right: 0;
   bottom: 0;
   z-index: 1;
 }
@@ -1013,7 +1015,7 @@ body {
 
 .main .mainContent #works .works-content .jprt-container .jprt-item .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTitleContent .project_areaContentTitleContentBox {
   display: block;
-  padding: 40px;
+  padding: 20px;
 }
 
 .main .mainContent #works .works-content .jprt-container .jprt-item .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTitleContent .project_areaContentTitleContentBox .project_areaContentTitleContentLoog {
@@ -1119,7 +1121,7 @@ body {
 }
 
 .main .mainContent #works .works-content .jprt-container .jprt-item .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTextContent .project_areaContentTextContentBox {
-  padding: 40px;
+  padding: 20px;
 }
 
 .main .mainContent #works .works-content .jprt-container .jprt-item .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTextContent .project_areaContentTextContentBox ul {

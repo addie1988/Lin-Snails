@@ -735,7 +735,7 @@ body {
   text-align: right;
   display: grid;
   grid-column: 1 / 2;
-  grid-template-columns: repeat(1, auto);
+  grid-template-columns: repeat(1, 100%);
   grid-template-rows: repeat(1, auto);
   justify-content: right;
 }
@@ -761,13 +761,17 @@ body {
 }
 
 .main .mainContent .about .aboutContent .aboutTextCpntent .aboutTextBox {
-  display: flex;
-  flex-direction: row-reverse;
   grid-column: 1 / 2;
+  width: 100%;
 }
 
-.main .mainContent .about .aboutContent .aboutTextCpntent .aboutTextBox p {
-  width: 100%;
+.main .mainContent .about .aboutContent .aboutTextCpntent .aboutTextBox .aboutTextBoxContent {
+  display: flex;
+  justify-content: right;
+  flex-direction: row-reverse;
+}
+
+.main .mainContent .about .aboutContent .aboutTextCpntent .aboutTextBox .aboutTextBoxContent p {
   height: 300px;
   color: #fff;
   font-size: 20px;
@@ -776,9 +780,9 @@ body {
   writing-mode: vertical-rl;
 }
 
-.main .mainContent .about .aboutContent .aboutTextCpntent .aboutTextBox .sign img {
+.main .mainContent .about .aboutContent .aboutTextCpntent .aboutTextBox .aboutTextBoxContent .sign img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .main .mainContent .about .serviceRace {
@@ -852,8 +856,8 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  .main .mainContent .about .aboutContent .aboutText .aboutTextCpntent .aboutTextBox p {
-    width: auto;
+  .main .mainContent .about .aboutContent .aboutText .aboutTextCpntent .aboutTextBox .aboutTextBoxContent {
+    justify-content: center;
   }
   .main .mainContent .about .serviceRace {
     bottom: -70px;
@@ -895,6 +899,10 @@ body {
     transform: rotate(269deg);
     position: absolute;
     top: 300px;
+  }
+  .main .mainContent .about .aboutContent .aboutTextCpntent .aboutTextBox .sign img {
+    width: 100%;
+    height: 100%;
   }
   .main .mainContent .about .serviceRace {
     bottom: -90px;
@@ -956,6 +964,7 @@ body {
 
 .service .serviceContent .news-holder .news-headlines {
   list-style: none;
+  width: 4%;
   height: 20%;
   position: relative;
   top: 0;
@@ -967,21 +976,24 @@ body {
 }
 
 .service .serviceContent .news-holder .news-headlines li {
-  padding: 19px;
   margin-bottom: 15px;
   position: relative;
   z-index: 20;
-  margin: 0;
-  writing-mode: vertical-lr;
+  display: flex;
+  justify-content: center;
+  padding: 17px;
+  writing-mode: lr;
   letter-spacing: 8px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .service .serviceContent .news-holder .news-headlines li p {
-  width: 100%;
   display: inline-block;
-  font-size: 18px;
+  font-size: 16px;
   color: #000;
   text-align: center;
+  line-height: 1.5;
 }
 
 .service .serviceContent .news-holder .news-headlines li .news-headlines .highlight {

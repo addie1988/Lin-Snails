@@ -125,7 +125,7 @@ body
                     text-align: right
                     display: grid
                     grid-column: 1 / 2
-                    grid-template-columns: repeat(1, auto)
+                    grid-template-columns: repeat(1, 100%)
                     grid-template-rows: repeat(1, auto)
                     justify-content: right
                     span
@@ -143,21 +143,23 @@ body
                         &:hover
                             color: #fff
                     .aboutTextBox
-                        display: flex
-                        flex-direction: row-reverse
                         grid-column: 1 / 2
-                        p
-                            width: 100%
-                            height: 300px
-                            color: #fff
-                            font-size: 20px
-                            letter-spacing: 2px
-                            line-height: 3.5
-                            writing-mode: vertical-rl
-                        .sign
-                            img
-                                width: 100%
-                                height: auto
+                        width: 100%
+                        .aboutTextBoxContent
+                            display: flex
+                            justify-content: right
+                            flex-direction: row-reverse
+                            p
+                                height: 300px
+                                color: #fff
+                                font-size: 20px
+                                letter-spacing: 2px
+                                line-height: 3.5
+                                writing-mode: vertical-rl
+                            .sign
+                                img
+                                    width: 100%
+                                    height: 100%
             .serviceRace
                 position: absolute
                 overflow: hidden
@@ -213,8 +215,11 @@ body
                                 flex-direction: row-reverse
                                 margin-left: auto
                                 margin-right: auto
-                                p
-                                    width: auto
+                                .aboutTextBoxContent
+                                    justify-content: center
+                                    p
+                                    .sign
+                                        img
                 .serviceRace
                     bottom: -70px
                     .serviceRaceContent
@@ -252,6 +257,9 @@ body
                                 transform: rotate(269deg)
                                 position: absolute
                                 top: 300px
+                                img
+                                    width: 100%
+                                    height: 100%
                 .serviceRace
                     bottom: -90px
                     .serviceRaceContent
@@ -291,6 +299,7 @@ body
                 float: left
             .news-headlines
                 list-style: none
+                width: 4%
                 height: 20%
                 position: relative
                 top: 0
@@ -300,19 +309,22 @@ body
                 border: 4px solid $background-color_main
                 background-color: $background-color
                 li
-                    padding: 19px
                     margin-bottom: 15px
                     position: relative
                     z-index: 20
-                    margin: 0
-                    writing-mode: vertical-lr
+                    display: flex
+                    justify-content: center
+                    padding: 17px
+                    writing-mode: lr
                     letter-spacing: 8px
+                    margin-left: auto
+                    margin-right: auto
                     p
-                        width: 100%
                         display: inline-block
-                        font-size: 18px
+                        font-size: 16px
                         color: #000
                         text-align: center
+                        line-height: 1.5
                     .news-headlines .highlight
                         width: 100%
                         position: relative
