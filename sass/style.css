@@ -1872,7 +1872,7 @@ body {
   grid-column: 2 / 3;
   display: flex;
   align-items: center;
-  padding: 0 0 0 50px;
+  padding: 50px;
 }
 
 .work .workContent .workContentText .workContentTextContent {
@@ -2001,7 +2001,6 @@ body {
   .work .workContent .workContentText {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    padding-bottom: 80px;
   }
   .map {
     position: relative;
@@ -2180,7 +2179,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .work .workRace {
-    top: -180px;
+    top: -150px;
   }
   .work .workRace .workRaceContent svg {
     width: 9000%;
