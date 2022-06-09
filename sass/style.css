@@ -890,17 +890,17 @@ body {
     justify-content: center;
     position: relative;
   }
-  .main .mainContent .about .aboutContent .aboutTextCpntent .aboutTextBox p {
-    width: 4vw;
+  .main .mainContent .about .aboutContent .aboutTextCpntent .aboutTextBox .aboutTextBoxContent p {
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
-  .main .mainContent .about .aboutContent .aboutTextCpntent .aboutTextBox .sign {
+  .main .mainContent .about .aboutContent .aboutTextCpntent .aboutTextBox .aboutTextBoxContent .sign {
     transform: rotate(269deg);
     position: absolute;
     top: 300px;
   }
-  .main .mainContent .about .aboutContent .aboutTextCpntent .aboutTextBox .sign img {
+  .main .mainContent .about .aboutContent .aboutTextCpntent .aboutTextBox .aboutTextBoxContent .sign img {
     width: 100%;
     height: 100%;
   }
@@ -2180,6 +2180,12 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  .work .workRace {
+    top: -180px;
+  }
+  .work .workRace .workRaceContent svg {
+    width: 9000%;
+  }
   .work .workContent .workContentText .workContentTextContent .workRaceViceTitle h1 {
     font-size: 70px;
   }

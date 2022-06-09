@@ -249,17 +249,18 @@ body
                             display: flex
                             justify-content: center
                             position: relative
-                            p
-                                width: 4vw
-                                margin-left: auto
-                                margin-right: auto
-                            .sign
-                                transform: rotate(269deg)
-                                position: absolute
-                                top: 300px
-                                img
+                            .aboutTextBoxContent
+                                p
                                     width: 100%
-                                    height: 100%
+                                    margin-left: auto
+                                    margin-right: auto
+                                .sign
+                                        transform: rotate(269deg)
+                                        position: absolute
+                                        top: 300px
+                                        img
+                                            width: 100%
+                                            height: 100%
                 .serviceRace
                     bottom: -90px
                     .serviceRaceContent
@@ -1051,7 +1052,7 @@ body
             top: -200px
             .workRaceContent
                 svg
-                    width: 4000%                                    
+                    width: 4000%
 @media screen and (max-width: 900px)
     .work
         .workRace
@@ -1227,6 +1228,11 @@ body
                 grid-row: 3 / 4
 @media screen and (max-width: 480px)
     .work
+        .workRace
+            top: -180px
+            .workRaceContent
+                svg
+                    width: 9000%
         .workContent
             .workContentImg
                 .workContentImgContent
