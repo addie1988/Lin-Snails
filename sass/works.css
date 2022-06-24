@@ -724,9 +724,8 @@ body {
 
 .main .mainContent #works .works-content .container-fluid .jprt-buttons .container-fluidImg {
   position: absolute;
-  left: 0;
-  right: 0;
   bottom: 0;
+  opacity: 0.4;
   z-index: 1;
 }
 
