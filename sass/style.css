@@ -1,7 +1,87 @@
 /* http://meyerweb.com/eric/tools/css/reset/
  * v2.0 | 20110126
  * License: none (public domain) */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, sm, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+sm,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -11,7 +91,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -19,21 +109,25 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after {
-  content: '';
+blockquote:before,
+blockquote:after {
+  content: "";
   content: none;
 }
 
-q:before, q:after {
-  content: '';
+q:before,
+q:after {
+  content: "";
   content: none;
 }
 
@@ -52,7 +146,7 @@ table {
     transform: translateY(0px);
   }
   50% {
-    opacity: .8;
+    opacity: 0.8;
     transform: translateY(300px);
   }
   100% {
@@ -71,7 +165,7 @@ table {
     transform: translateY(0px);
   }
   50% {
-    opacity: .8;
+    opacity: 0.8;
     transform: translateY(300px);
   }
   100% {
@@ -90,7 +184,7 @@ table {
     transform: translateY(0px);
   }
   50% {
-    opacity: .8;
+    opacity: 0.8;
     transform: translateY(300px);
   }
   100% {
@@ -109,7 +203,7 @@ table {
     transform: translateY(0px);
   }
   50% {
-    opacity: .8;
+    opacity: 0.8;
     transform: translateY(300px);
   }
   100% {
@@ -128,7 +222,7 @@ table {
     transform: translateY(0px);
   }
   50% {
-    opacity: .8;
+    opacity: 0.8;
     transform: translateY(300px);
   }
   100% {
@@ -147,7 +241,7 @@ table {
     transform: translateY(0px);
   }
   50% {
-    opacity: .8;
+    opacity: 0.8;
     transform: translateY(300px);
   }
   100% {
@@ -166,7 +260,7 @@ table {
     transform: translateY(0px);
   }
   50% {
-    opacity: .8;
+    opacity: 0.8;
     transform: translateY(300px);
   }
   100% {
@@ -185,7 +279,7 @@ table {
     transform: translateY(0px);
   }
   50% {
-    opacity: .8;
+    opacity: 0.8;
     transform: translateY(300px);
   }
   100% {
@@ -204,7 +298,7 @@ table {
     transform: translateY(0px);
   }
   50% {
-    opacity: .8;
+    opacity: 0.8;
     transform: translateY(300px);
   }
   100% {
@@ -223,7 +317,7 @@ table {
     transform: translateY(0px);
   }
   50% {
-    opacity: .8;
+    opacity: 0.8;
     transform: translateY(300px);
   }
   100% {
@@ -242,7 +336,7 @@ table {
     transform: translateY(0px);
   }
   50% {
-    opacity: .8;
+    opacity: 0.8;
     transform: translateY(300px);
   }
   100% {
@@ -261,7 +355,7 @@ table {
     transform: translateY(0px);
   }
   50% {
-    opacity: .8;
+    opacity: 0.8;
     transform: translateY(300px);
   }
   100% {
@@ -280,7 +374,7 @@ table {
     transform: translateY(0px);
   }
   50% {
-    opacity: .8;
+    opacity: 0.8;
     transform: translateY(300px);
   }
   100% {
@@ -299,7 +393,7 @@ table {
     transform: translateY(0px);
   }
   50% {
-    opacity: .8;
+    opacity: 0.8;
     transform: translateY(300px);
   }
   100% {
@@ -318,7 +412,7 @@ table {
     transform: translateY(0px);
   }
   50% {
-    opacity: .8;
+    opacity: 0.8;
     transform: translateY(300px);
   }
   100% {
@@ -337,7 +431,7 @@ table {
     transform: translateY(0px);
   }
   50% {
-    opacity: .8;
+    opacity: 0.8;
     transform: translateY(300px);
   }
   100% {
@@ -356,7 +450,7 @@ table {
     transform: translateY(0px);
   }
   50% {
-    opacity: .8;
+    opacity: 0.8;
     transform: translateY(300px);
   }
   100% {
@@ -375,7 +469,7 @@ table {
     transform: translateY(0px);
   }
   50% {
-    opacity: .8;
+    opacity: 0.8;
     transform: translateY(300px);
   }
   100% {
@@ -472,7 +566,7 @@ body {
   text-decoration: none;
   position: relative;
   font-size: 16px;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .header .headerContent .navbarContent .menu .menuContent ul li a:hover {
@@ -494,7 +588,7 @@ body {
   opacity: 0;
   display: inline-block;
   background-color: #fff;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -540,20 +634,26 @@ body {
   width: 260px;
   height: 260px;
   position: absolute;
-  animation: sloganContentMove 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+  animation: sloganContentMove 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both
+    infinite;
 }
 
 @keyframes sloganContentMove {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0);
   }
-  20%, 80% {
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0);
   }
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-4px, 0, 0);
   }
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(4px, 0, 0);
   }
 }
@@ -728,7 +828,7 @@ body {
   right: -229px;
   z-index: -1;
   background-color: #f2b43d;
-  border-bottom-left-radius: 70%;
+  border-bottom-left-radius: 20vw;
 }
 
 .main .mainContent .about .aboutContent .aboutTextCpntent {
@@ -765,13 +865,26 @@ body {
   width: 100%;
 }
 
-.main .mainContent .about .aboutContent .aboutTextCpntent .aboutTextBox .aboutTextBoxContent {
+.main
+  .mainContent
+  .about
+  .aboutContent
+  .aboutTextCpntent
+  .aboutTextBox
+  .aboutTextBoxContent {
   display: flex;
   justify-content: right;
   flex-direction: row-reverse;
 }
 
-.main .mainContent .about .aboutContent .aboutTextCpntent .aboutTextBox .aboutTextBoxContent p {
+.main
+  .mainContent
+  .about
+  .aboutContent
+  .aboutTextCpntent
+  .aboutTextBox
+  .aboutTextBoxContent
+  p {
   height: 300px;
   color: #fff;
   font-size: 20px;
@@ -780,9 +893,17 @@ body {
   writing-mode: vertical-rl;
 }
 
-.main .mainContent .about .aboutContent .aboutTextCpntent .aboutTextBox .aboutTextBoxContent .sign img {
+.main
+  .mainContent
+  .about
+  .aboutContent
+  .aboutTextCpntent
+  .aboutTextBox
+  .aboutTextBoxContent
+  .sign
+  img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .main .mainContent .about .serviceRace {
@@ -816,7 +937,22 @@ body {
   }
 }
 
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 980px) {
+  .main .mainContent .about .aboutContent .aboutTextCpntent {
+    text-align: center;
+  }
+
+  .main .mainContent .about .aboutContent .aboutTextCpntent .aboutTextBox .aboutTextBoxContent {
+    justify-content: center;
+  }
+
+  .main .mainContent .about .aboutContent .aboutText::before {
+    width: 150%;
+    height: 150%;
+    border-bottom-left-radius: 10vw;
+    border-bottom-right-radius: 10vw;
+  }
+
   .main .mainContent .about .aboutContent {
     grid-column: 1 / 2;
     grid-template-columns: repeat(1, 100%);
@@ -829,35 +965,10 @@ body {
     grid-row: 2 / 3;
   }
   .main .mainContent .about .aboutContent .aboutText {
+    padding: 0;
+    height: 100%;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    padding: 50px 0 60px 0;
-  }
-  .main .mainContent .about .aboutContent .aboutText::before {
-    width: 100%;
-    right: 0;
-    border-radius: 0;
-  }
-  .main .mainContent .about .aboutContent .aboutText .aboutTextCpntent {
-    grid-column: 1 / 2;
-    grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(2, auto);
-  }
-  .main .mainContent .about .aboutContent .aboutText .aboutTextCpntent span {
-    grid-column: 1 / 2;
-    text-align: center;
-  }
-  .main .mainContent .about .aboutContent .aboutText .aboutTextCpntent h1 {
-    grid-column: 1 / 2;
-    text-align: center;
-  }
-  .main .mainContent .about .aboutContent .aboutText .aboutTextCpntent .aboutTextBox {
-    flex-direction: row-reverse;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .main .mainContent .about .aboutContent .aboutText .aboutTextCpntent .aboutTextBox .aboutTextBoxContent {
-    justify-content: center;
   }
   .main .mainContent .about .serviceRace {
     bottom: -70px;
@@ -866,8 +977,17 @@ body {
     width: 4000%;
   }
 }
-
+@media screen and (max-width: 620px) {
+  .main .mainContent .about .aboutContent .aboutText::before {
+    height: 150%;
+    right: 0;
+  }
+}
 @media screen and (max-width: 480px) {
+  .main .mainContent .about .aboutContent .aboutText::before {
+    width: 100%;
+  }
+
   .main::before {
     width: 70%;
     height: 30%;
@@ -890,16 +1010,38 @@ body {
     justify-content: center;
     position: relative;
   }
-  .main .mainContent .about .aboutContent .aboutTextCpntent .aboutTextBox .aboutTextBoxContent p {
+  .main
+    .mainContent
+    .about
+    .aboutContent
+    .aboutTextCpntent
+    .aboutTextBox
+    .aboutTextBoxContent
+    p {
     margin-left: auto;
     margin-right: auto;
   }
-  .main .mainContent .about .aboutContent .aboutTextCpntent .aboutTextBox .aboutTextBoxContent .sign {
+  .main
+    .mainContent
+    .about
+    .aboutContent
+    .aboutTextCpntent
+    .aboutTextBox
+    .aboutTextBoxContent
+    .sign {
     transform: rotate(269deg);
     position: absolute;
     top: 300px;
   }
-  .main .mainContent .about .aboutContent .aboutTextCpntent .aboutTextBox .aboutTextBoxContent .sign img {
+  .main
+    .mainContent
+    .about
+    .aboutContent
+    .aboutTextCpntent
+    .aboutTextBox
+    .aboutTextBoxContent
+    .sign
+    img {
     width: 100%;
     height: 100%;
   }
@@ -995,7 +1137,13 @@ body {
   line-height: 1.5;
 }
 
-.service .serviceContent .news-holder .news-headlines li .news-headlines .highlight {
+.service
+  .serviceContent
+  .news-holder
+  .news-headlines
+  li
+  .news-headlines
+  .highlight {
   width: 100%;
   position: relative;
   top: 0;
@@ -1004,10 +1152,10 @@ body {
 }
 
 .service .serviceContent .news-holder .news-headlines li .nh-anim {
-  -webkit-transition: .75s ease-out;
-  -moz-transition: .75s ease-out;
-  -o-transition: .75s ease-out;
-  transition: .75s ease-out;
+  -webkit-transition: 0.75s ease-out;
+  -moz-transition: 0.75s ease-out;
+  -o-transition: 0.75s ease-out;
+  transition: 0.75s ease-out;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -o-transform: translateZ(0);
@@ -1042,7 +1190,12 @@ body {
   display: none;
 }
 
-.service .serviceContent .news-holder .news-preview .news-content .news-contentImg {
+.service
+  .serviceContent
+  .news-holder
+  .news-preview
+  .news-content
+  .news-contentImg {
   width: 80%;
   position: relative;
   display: flex;
@@ -1056,7 +1209,13 @@ body {
   box-shadow: 1px 1px 1px 0 #f2b33d64;
 }
 
-.service .serviceContent .news-holder .news-preview .news-content .news-contentImg .news-contentImgContent {
+.service
+  .serviceContent
+  .news-holder
+  .news-preview
+  .news-content
+  .news-contentImg
+  .news-contentImgContent {
   max-width: 200px;
   max-height: 200px;
   position: relative;
@@ -1069,7 +1228,13 @@ body {
   background-color: #f2b43d;
 }
 
-.service .serviceContent .news-holder .news-preview .news-content .news-contentImg .news-contentImgContent::before {
+.service
+  .serviceContent
+  .news-holder
+  .news-preview
+  .news-content
+  .news-contentImg
+  .news-contentImgContent::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -1099,14 +1264,26 @@ body {
   }
 }
 
-.service .serviceContent .news-holder .news-preview .news-content .news-contentImg .news-contentImgContent img {
+.service
+  .serviceContent
+  .news-holder
+  .news-preview
+  .news-content
+  .news-contentImg
+  .news-contentImgContent
+  img {
   display: inline-block;
   width: 100%;
   height: 100%;
   margin: 0 auto 5px auto;
 }
 
-.service .serviceContent .news-holder .news-preview .news-content .news-contentText {
+.service
+  .serviceContent
+  .news-holder
+  .news-preview
+  .news-content
+  .news-contentText {
   width: 70%;
   display: inline-block;
   position: relative;
@@ -1122,7 +1299,13 @@ body {
   border: 15px solid #f2b43d;
 }
 
-.service .serviceContent .news-holder .news-preview .news-content .news-contentText .news-contentTextContent {
+.service
+  .serviceContent
+  .news-holder
+  .news-preview
+  .news-content
+  .news-contentText
+  .news-contentTextContent {
   width: 90%;
   text-align: center;
   position: relative;
@@ -1131,7 +1314,14 @@ body {
   margin-right: auto;
 }
 
-.service .serviceContent .news-holder .news-preview .news-content .news-contentText .news-contentTextContent .contentTextContentTitle {
+.service
+  .serviceContent
+  .news-holder
+  .news-preview
+  .news-content
+  .news-contentText
+  .news-contentTextContent
+  .contentTextContentTitle {
   width: 100%;
   position: relative;
   top: 0;
@@ -1140,7 +1330,15 @@ body {
   margin-right: auto;
 }
 
-.service .serviceContent .news-holder .news-preview .news-content .news-contentText .news-contentTextContent .contentTextContentTitle span {
+.service
+  .serviceContent
+  .news-holder
+  .news-preview
+  .news-content
+  .news-contentText
+  .news-contentTextContent
+  .contentTextContentTitle
+  span {
   width: 90%;
   font-size: 58px;
   color: transparent;
@@ -1156,7 +1354,15 @@ body {
   margin-right: auto;
 }
 
-.service .serviceContent .news-holder .news-preview .news-content .news-contentText .news-contentTextContent .contentTextContentTitle span::before {
+.service
+  .serviceContent
+  .news-holder
+  .news-preview
+  .news-content
+  .news-contentText
+  .news-contentTextContent
+  .contentTextContentTitle
+  span::before {
   content: "";
   width: 700px;
   height: 700px;
@@ -1168,13 +1374,28 @@ body {
   border-radius: 50%;
 }
 
-.service .serviceContent .news-holder .news-preview .news-content .news-contentText .news-contentTextContent .contentTextContentText {
+.service
+  .serviceContent
+  .news-holder
+  .news-preview
+  .news-content
+  .news-contentText
+  .news-contentTextContent
+  .contentTextContentText {
   padding: 40px 0;
   line-height: 4;
   border-style: dashed;
 }
 
-.service .serviceContent .news-holder .news-preview .news-content .news-contentText .news-contentTextContent .contentTextContentText span {
+.service
+  .serviceContent
+  .news-holder
+  .news-preview
+  .news-content
+  .news-contentText
+  .news-contentTextContent
+  .contentTextContentText
+  span {
   width: 100%;
   display: inline-block;
   text-align: left;
@@ -1187,11 +1408,27 @@ body {
   border-style: dashed;
 }
 
-.service .serviceContent .news-holder .news-preview .news-content .news-contentText .news-contentTextContent .contentTextContentText span:nth-child(3) {
+.service
+  .serviceContent
+  .news-holder
+  .news-preview
+  .news-content
+  .news-contentText
+  .news-contentTextContent
+  .contentTextContentText
+  span:nth-child(3) {
   border-bottom: 0;
 }
 
-.service .serviceContent .news-holder .news-preview .news-content .news-contentText .news-contentTextContent .contentTextContentText span::before {
+.service
+  .serviceContent
+  .news-holder
+  .news-preview
+  .news-content
+  .news-contentText
+  .news-contentTextContent
+  .contentTextContentText
+  span::before {
   content: "";
   width: 30px;
   height: 30px;
@@ -1216,7 +1453,14 @@ body {
   }
 }
 
-.service .serviceContent .news-holder .news-preview .news-content .news-contentText .news-contentTextContent a {
+.service
+  .serviceContent
+  .news-holder
+  .news-preview
+  .news-content
+  .news-contentText
+  .news-contentTextContent
+  a {
   width: 60%;
   display: inline-block;
   text-align: center;
@@ -1230,7 +1474,14 @@ body {
   overflow: hidden;
 }
 
-.service .serviceContent .news-holder .news-preview .news-content .news-contentText .news-contentTextContent a::before {
+.service
+  .serviceContent
+  .news-holder
+  .news-preview
+  .news-content
+  .news-contentText
+  .news-contentTextContent
+  a::before {
   content: "";
   width: 0;
   height: 1000%;
@@ -1243,7 +1494,14 @@ body {
   transform: rotate(343deg);
 }
 
-.service .serviceContent .news-holder .news-preview .news-content .news-contentText .news-contentTextContent a:hover::before {
+.service
+  .serviceContent
+  .news-holder
+  .news-preview
+  .news-content
+  .news-contentText
+  .news-contentTextContent
+  a:hover::before {
   width: 100%;
 }
 
@@ -1334,7 +1592,12 @@ body {
     justify-content: center;
     writing-mode: inherit;
   }
-  .service .serviceContent .news-holder .news-headlines .news-headlines .highlight {
+  .service
+    .serviceContent
+    .news-holder
+    .news-headlines
+    .news-headlines
+    .highlight {
     height: 0;
   }
   .service .serviceContent .news-holder .news-preview {
@@ -1346,21 +1609,44 @@ body {
     margin-right: auto;
     border-top-right-radius: 0;
   }
-  .service .serviceContent .news-holder .news-preview .news-content .news-contentImg {
+  .service
+    .serviceContent
+    .news-holder
+    .news-preview
+    .news-content
+    .news-contentImg {
     width: 89%;
   }
-  .service .serviceContent .news-holder .news-preview .news-content .news-contentImg .news-contentImgContent {
+  .service
+    .serviceContent
+    .news-holder
+    .news-preview
+    .news-content
+    .news-contentImg
+    .news-contentImgContent {
     min-width: 150px;
     min-height: 150px;
     padding: 20px;
   }
-  .service .serviceContent .news-holder .news-preview .news-content .news-contentText {
+  .service
+    .serviceContent
+    .news-holder
+    .news-preview
+    .news-content
+    .news-contentText {
     width: 90%;
     height: auto;
     display: grid;
     align-items: center;
   }
-  .service .serviceContent .news-holder .news-preview .news-content .news-contentText .news-contentTextContent a {
+  .service
+    .serviceContent
+    .news-holder
+    .news-preview
+    .news-content
+    .news-contentText
+    .news-contentTextContent
+    a {
     width: 80%;
   }
 }
@@ -1437,7 +1723,14 @@ body {
   position: relative;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout .project {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  .project {
   width: 400px;
   height: 400px;
   display: inline-block;
@@ -1446,12 +1739,28 @@ body {
   overflow: hidden;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout .project:hover .projectTitle {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  .project:hover
+  .projectTitle {
   height: 50%;
   opacity: 1;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout .project .projectTitle {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  .project
+  .projectTitle {
   position: absolute;
   width: 100%;
   height: 0%;
@@ -1465,12 +1774,27 @@ body {
   background-color: rgba(0, 0, 0, 0.476);
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout .project img {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  .project
+  img {
   width: 100%;
   height: 100%;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area {
   width: 100%;
   height: 100%;
   display: none;
@@ -1501,13 +1825,30 @@ body {
   }
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaSlogan {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaSlogan {
   position: relative;
   overflow: hidden;
   top: 0;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaSlogan svg {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaSlogan
+  svg {
   width: 3000%;
   animation: project_areaSloganMover 100s infinite linear;
 }
@@ -1524,11 +1865,28 @@ body {
   }
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .workRaceContent {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .workRaceContent {
   margin: 0 auto;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .workRaceContent svg {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .workRaceContent
+  svg {
   width: 1200%;
   animation: workRaceMover 100s infinite linear;
 }
@@ -1545,7 +1903,15 @@ body {
   }
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent {
   position: relative;
   width: 98%;
   height: auto;
@@ -1556,13 +1922,32 @@ body {
   background-color: #eaeaea;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaSlogan {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_areaSlogan {
   position: relative;
   overflow: hidden;
   top: 0;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaSlogan svg {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_areaSlogan
+  svg {
   width: 2400%;
   animation: project_areaSloganMover 100s infinite linear;
 }
@@ -1579,7 +1964,16 @@ body {
   }
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_area_content {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_area_content {
   width: 80px;
   height: 80px;
   display: flex;
@@ -1595,7 +1989,17 @@ body {
   box-shadow: 5px 5px 2px -1px #828282;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_area_content span {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_area_content
+  span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1607,7 +2011,17 @@ body {
   border-radius: 50%;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_area_content span::before {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_area_content
+  span::before {
   content: "";
   width: 24px;
   border: 1px solid white;
@@ -1625,7 +2039,17 @@ body {
   -o-transform: rotate(44deg);
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_area_content span::after {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_area_content
+  span::after {
   content: "";
   width: 24px;
   border: 1px solid white;
@@ -1643,7 +2067,17 @@ body {
   -o-transform: rotate(-44deg);
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_area_content span:hover::before {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_area_content
+  span:hover::before {
   animation: project_area_contentBefore 1s ease-in-out;
 }
 
@@ -1656,7 +2090,17 @@ body {
   }
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_area_content span:hover::after {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_area_content
+  span:hover::after {
   animation: project_area_contentAfter 1s ease-in-out;
 }
 
@@ -1669,7 +2113,16 @@ body {
   }
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_areaContentText {
   position: relative;
   display: grid;
   grid-column: 1 / 3;
@@ -1679,30 +2132,101 @@ body {
   padding: 40px 0;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTitleContent {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_areaContentText
+  .project_areaContentTitleContent {
   position: relative;
   grid-column: 1 / 2;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTitleContent .project_areaContentTitleContentBox {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_areaContentText
+  .project_areaContentTitleContent
+  .project_areaContentTitleContentBox {
   display: block;
   padding: 40px;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTitleContent .project_areaContentTitleContentBox .project_areaContentTitleContentLoog {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_areaContentText
+  .project_areaContentTitleContent
+  .project_areaContentTitleContentBox
+  .project_areaContentTitleContentLoog {
   width: 100px;
   height: 100px;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTitleContent .project_areaContentTitleContentBox .project_areaContentTitleContentLoog svg {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_areaContentText
+  .project_areaContentTitleContent
+  .project_areaContentTitleContentBox
+  .project_areaContentTitleContentLoog
+  svg {
   width: 100%;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTitleContent .project_areaContentTitleContentBox .project_areaContentTitleContentTitle {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_areaContentText
+  .project_areaContentTitleContent
+  .project_areaContentTitleContentBox
+  .project_areaContentTitleContentTitle {
   position: relative;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTitleContent .project_areaContentTitleContentBox .project_areaContentTitleContentTitle h2 {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_areaContentText
+  .project_areaContentTitleContent
+  .project_areaContentTitleContentBox
+  .project_areaContentTitleContentTitle
+  h2 {
   text-align: left;
   font-size: 22px;
   padding: 100px 0;
@@ -1712,7 +2236,20 @@ body {
   color: #000;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTitleContent .project_areaContentTitleContentBox .project_areaContentTitleContentTitle h2::before {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_areaContentText
+  .project_areaContentTitleContent
+  .project_areaContentTitleContentBox
+  .project_areaContentTitleContentTitle
+  h2::before {
   content: "";
   width: 100%;
   position: absolute;
@@ -1724,17 +2261,56 @@ body {
   background-color: #f2b43d;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTitleContent .project_areaContentTitleContentBox .project_areaContentTitleContentDetailed p {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_areaContentText
+  .project_areaContentTitleContent
+  .project_areaContentTitleContentBox
+  .project_areaContentTitleContentDetailed
+  p {
   font-size: 16px;
   text-align: left;
   line-height: 2;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTitleContent .project_areaContentTitleContentBox .project_areaContentTitleContentIcon {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_areaContentText
+  .project_areaContentTitleContent
+  .project_areaContentTitleContentBox
+  .project_areaContentTitleContentIcon {
   padding: 100px 0;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTitleContent .project_areaContentTitleContentBox .project_areaContentTitleContentIcon ul li {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_areaContentText
+  .project_areaContentTitleContent
+  .project_areaContentTitleContentBox
+  .project_areaContentTitleContentIcon
+  ul
+  li {
   width: 40px;
   height: 40px;
   border: 1px solid #f2b43d;
@@ -1748,14 +2324,42 @@ body {
   overflow: hidden;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTitleContent .project_areaContentTitleContentBox .project_areaContentTitleContentIcon ul li:hover::before {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_areaContentText
+  .project_areaContentTitleContent
+  .project_areaContentTitleContentBox
+  .project_areaContentTitleContentIcon
+  ul
+  li:hover::before {
   width: 40px;
   height: 40px;
   opacity: 1;
   transform: scale(5, 5);
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTitleContent .project_areaContentTitleContentBox .project_areaContentTitleContentIcon ul li::before {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_areaContentText
+  .project_areaContentTitleContent
+  .project_areaContentTitleContentBox
+  .project_areaContentTitleContentIcon
+  ul
+  li::before {
   content: "";
   width: 0;
   height: 0;
@@ -1770,16 +2374,57 @@ body {
   transition: 1s ease-in-out;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTitleContent .project_areaContentTitleContentBox .project_areaContentTitleContentIcon ul li a {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_areaContentText
+  .project_areaContentTitleContent
+  .project_areaContentTitleContentBox
+  .project_areaContentTitleContentIcon
+  ul
+  li
+  a {
   display: inline-block;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTitleContent .project_areaContentTitleContentBox .project_areaContentTitleContentIcon ul li a img {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_areaContentText
+  .project_areaContentTitleContent
+  .project_areaContentTitleContentBox
+  .project_areaContentTitleContentIcon
+  ul
+  li
+  a
+  img {
   width: 100%;
   height: 100%;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTextContent {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_areaContentText
+  .project_areaContentTextContent {
   position: relative;
   grid-column: 2 / 3;
   height: 100%;
@@ -1787,27 +2432,86 @@ body {
   justify-content: flex-end;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTextContent .project_areaContentTextContentBox {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_areaContentText
+  .project_areaContentTextContent
+  .project_areaContentTextContentBox {
   padding: 40px;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTextContent .project_areaContentTextContentBox ul {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_areaContentText
+  .project_areaContentTextContent
+  .project_areaContentTextContentBox
+  ul {
   display: block;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTextContent .project_areaContentTextContentBox ul li {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_areaContentText
+  .project_areaContentTextContent
+  .project_areaContentTextContentBox
+  ul
+  li {
   width: 80%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTextContent .project_areaContentTextContentBox ul li img {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_areaContentText
+  .project_areaContentTextContent
+  .project_areaContentTextContentBox
+  ul
+  li
+  img {
   width: 100%;
   height: 100%;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_Slogan {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_Slogan {
   position: absolute;
   left: 50px;
   bottom: 50px;
@@ -1820,45 +2524,97 @@ body {
   pointer-events: none;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_Slogan .project_SloganContent {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_Slogan
+  .project_SloganContent {
   margin: 0 auto;
   width: 400%;
   height: 400%;
   position: absolute;
-  animation: sloganContentMove 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+  animation: sloganContentMove 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both
+    infinite;
 }
 
 @keyframes sloganContentMove {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0);
   }
-  20%, 80% {
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0);
   }
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-4px, 0, 0);
   }
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(4px, 0, 0);
   }
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_Slogan .project_SloganContent svg {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_Slogan
+  .project_SloganContent
+  svg {
   width: 100%;
   height: 100%;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_Slogan img {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  #project_area
+  .project_areaContent
+  .project_Slogan
+  img {
   width: 100%;
   height: 100%;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout .swipeUp {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  .swipeUp {
   position: relative;
   padding: 40px 0;
 }
 
-.work .workContent .workContentImg .workContentImgContent ul li .layout .swipeUp a {
+.work
+  .workContent
+  .workContentImg
+  .workContentImgContent
+  ul
+  li
+  .layout
+  .swipeUp
+  a {
   width: 0;
   height: 0;
   display: inline-block;
@@ -1891,19 +2647,34 @@ body {
   padding: 40px 0;
 }
 
-.work .workContent .workContentText .workContentTextContent .workRaceViceTitle span {
+.work
+  .workContent
+  .workContentText
+  .workContentTextContent
+  .workRaceViceTitle
+  span {
   color: #fff;
   font-style: italic;
 }
 
-.work .workContent .workContentText .workContentTextContent .workRaceViceTitle h1 {
+.work
+  .workContent
+  .workContentText
+  .workContentTextContent
+  .workRaceViceTitle
+  h1 {
   color: transparent;
   font-size: 100px;
   -webkit-text-stroke: 1px #f2b43d;
   transition: 1s ease-in-out;
 }
 
-.work .workContent .workContentText .workContentTextContent .workRaceViceTitle h1:hover {
+.work
+  .workContent
+  .workContentText
+  .workContentTextContent
+  .workRaceViceTitle
+  h1:hover {
   color: #f2b43d;
 }
 
@@ -1916,7 +2687,12 @@ body {
   justify-content: center;
 }
 
-.work .workContent .workContentText .workContentTextContent .workRaceViceMore a {
+.work
+  .workContent
+  .workContentText
+  .workContentTextContent
+  .workRaceViceMore
+  a {
   color: #000;
   font-size: 20px;
   text-decoration: none;
@@ -1925,23 +2701,51 @@ body {
   justify-content: center;
 }
 
-.work .workContent .workContentText .workContentTextContent .workRaceViceMore a .workRaceViceMoreContent {
+.work
+  .workContent
+  .workContentText
+  .workContentTextContent
+  .workRaceViceMore
+  a
+  .workRaceViceMoreContent {
   position: absolute;
   left: 0;
   width: 150px;
   height: 150px;
 }
 
-.work .workContent .workContentText .workContentTextContent .workRaceViceMore a .workRaceViceMoreContent svg {
+.work
+  .workContent
+  .workContentText
+  .workContentTextContent
+  .workRaceViceMore
+  a
+  .workRaceViceMoreContent
+  svg {
   width: 100%;
 }
 
-.work .workContent .workContentText .workContentTextContent .workRaceViceMore a .workRaceViceMoreContent .workRaceViceMoreText {
+.work
+  .workContent
+  .workContentText
+  .workContentTextContent
+  .workRaceViceMore
+  a
+  .workRaceViceMoreContent
+  .workRaceViceMoreText {
   position: absolute;
   display: block;
 }
 
-.work .workContent .workContentText .workContentTextContent .workRaceViceMore a .workRaceViceMoreContent .workRaceViceMoreText p {
+.work
+  .workContent
+  .workContentText
+  .workContentTextContent
+  .workRaceViceMore
+  a
+  .workRaceViceMoreContent
+  .workRaceViceMoreText
+  p {
   font-size: 20px;
 }
 
@@ -1968,33 +2772,112 @@ body {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
-  .work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaSlogan {
+  .work
+    .workContent
+    .workContentImg
+    .workContentImgContent
+    ul
+    li
+    .layout
+    #project_area
+    .project_areaSlogan {
     top: 0;
   }
-  .work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaSlogan svg {
+  .work
+    .workContent
+    .workContentImg
+    .workContentImgContent
+    ul
+    li
+    .layout
+    #project_area
+    .project_areaSlogan
+    svg {
     width: 7000%;
   }
-  .work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText {
+  .work
+    .workContent
+    .workContentImg
+    .workContentImgContent
+    ul
+    li
+    .layout
+    #project_area
+    .project_areaContent
+    .project_areaContentText {
     grid-column: 1 / 2;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, auto);
   }
-  .work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTitleContent {
+  .work
+    .workContent
+    .workContentImg
+    .workContentImgContent
+    ul
+    li
+    .layout
+    #project_area
+    .project_areaContent
+    .project_areaContentText
+    .project_areaContentTitleContent {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
-  .work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTitleContentBox .project_areaContentTitleContentIcon {
+  .work
+    .workContent
+    .workContentImg
+    .workContentImgContent
+    ul
+    li
+    .layout
+    #project_area
+    .project_areaContent
+    .project_areaContentText
+    .project_areaContentTitleContentBox
+    .project_areaContentTitleContentIcon {
     padding: 100px 0;
   }
-  .work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTextContent {
+  .work
+    .workContent
+    .workContentImg
+    .workContentImgContent
+    ul
+    li
+    .layout
+    #project_area
+    .project_areaContent
+    .project_areaContentText
+    .project_areaContentTextContent {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     justify-content: center;
   }
-  .work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTextContent .project_areaContentTextContentBox ul li {
+  .work
+    .workContent
+    .workContentImg
+    .workContentImgContent
+    ul
+    li
+    .layout
+    #project_area
+    .project_areaContent
+    .project_areaContentText
+    .project_areaContentTextContent
+    .project_areaContentTextContentBox
+    ul
+    li {
     width: 100%;
   }
-  .work .workContent .workContentImg .workContentImgContent ul li .layout #project_area .project_areaContent .project_Slogan {
+  .work
+    .workContent
+    .workContentImg
+    .workContentImgContent
+    ul
+    li
+    .layout
+    #project_area
+    .project_areaContent
+    .project_Slogan {
     opacity: 0;
   }
   .work .workContent .workContentText {
@@ -2042,16 +2925,31 @@ body {
   padding: 40px 0;
 }
 
-.footer .footerContent .footerContentBox:nth-child(2) .footerContentBoxSwipeUp a {
+.footer
+  .footerContent
+  .footerContentBox:nth-child(2)
+  .footerContentBoxSwipeUp
+  a {
   text-decoration: none;
   position: relative;
 }
 
-.footer .footerContent .footerContentBox:nth-child(2) .footerContentBoxSwipeUp a .footerContentBoxA {
+.footer
+  .footerContent
+  .footerContentBox:nth-child(2)
+  .footerContentBoxSwipeUp
+  a
+  .footerContentBoxA {
   text-align: center;
 }
 
-.footer .footerContent .footerContentBox:nth-child(2) .footerContentBoxSwipeUp a .footerContentBoxA .footerContentBoxIcon {
+.footer
+  .footerContent
+  .footerContentBox:nth-child(2)
+  .footerContentBoxSwipeUp
+  a
+  .footerContentBoxA
+  .footerContentBoxIcon {
   width: 0;
   height: 0;
   display: inline-block;
@@ -2060,22 +2958,40 @@ body {
   border-bottom: 16px solid #000;
 }
 
-.footer .footerContent .footerContentBox:nth-child(2) .footerContentBoxSwipeUp a .footerContentBoxA p {
+.footer
+  .footerContent
+  .footerContentBox:nth-child(2)
+  .footerContentBoxSwipeUp
+  a
+  .footerContentBoxA
+  p {
   color: #000;
   font-size: 12px;
   padding-top: 6px;
 }
 
-.footer .footerContent .footerContentBox:nth-child(3) .footerContentBoxIconContent {
+.footer
+  .footerContent
+  .footerContentBox:nth-child(3)
+  .footerContentBoxIconContent {
   margin: 0 auto;
 }
 
-.footer .footerContent .footerContentBox:nth-child(3) .footerContentBoxIconContent ul {
+.footer
+  .footerContent
+  .footerContentBox:nth-child(3)
+  .footerContentBoxIconContent
+  ul {
   display: flex;
   justify-content: flex-end;
 }
 
-.footer .footerContent .footerContentBox:nth-child(3) .footerContentBoxIconContent ul li {
+.footer
+  .footerContent
+  .footerContentBox:nth-child(3)
+  .footerContentBoxIconContent
+  ul
+  li {
   width: 30px;
   height: 30px;
   border: 1px solid #fff;
@@ -2089,14 +3005,24 @@ body {
   overflow: hidden;
 }
 
-.footer .footerContent .footerContentBox:nth-child(3) .footerContentBoxIconContent ul li:hover::before {
+.footer
+  .footerContent
+  .footerContentBox:nth-child(3)
+  .footerContentBoxIconContent
+  ul
+  li:hover::before {
   width: 40px;
   height: 40px;
   opacity: 1;
   transform: scale(5, 5);
 }
 
-.footer .footerContent .footerContentBox:nth-child(3) .footerContentBoxIconContent ul li::before {
+.footer
+  .footerContent
+  .footerContentBox:nth-child(3)
+  .footerContentBoxIconContent
+  ul
+  li::before {
   content: "";
   width: 0;
   height: 0;
@@ -2111,16 +3037,33 @@ body {
   transition: 1s ease-in-out;
 }
 
-.footer .footerContent .footerContentBox:nth-child(3) .footerContentBoxIconContent ul li a {
+.footer
+  .footerContent
+  .footerContentBox:nth-child(3)
+  .footerContentBoxIconContent
+  ul
+  li
+  a {
   display: inline-block;
 }
 
-.footer .footerContent .footerContentBox:nth-child(3) .footerContentBoxIconContent ul li a img {
+.footer
+  .footerContent
+  .footerContentBox:nth-child(3)
+  .footerContentBoxIconContent
+  ul
+  li
+  a
+  img {
   width: 100%;
   height: 100%;
 }
 
-.footer .footerContent .footerContentBox:nth-child(3) .footerContentBoxIconContent p {
+.footer
+  .footerContent
+  .footerContentBox:nth-child(3)
+  .footerContentBoxIconContent
+  p {
   font-size: 12px;
   padding-top: 16px;
   text-align: right;
@@ -2151,13 +3094,26 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  .footer .footerContent .footerContentBox:nth-child(3) .footerContentBoxIconContent ul {
+  .footer
+    .footerContent
+    .footerContentBox:nth-child(3)
+    .footerContentBoxIconContent
+    ul {
     justify-content: center;
   }
-  .footer .footerContent .footerContentBox:nth-child(3) .footerContentBoxIconContent ul li {
+  .footer
+    .footerContent
+    .footerContentBox:nth-child(3)
+    .footerContentBoxIconContent
+    ul
+    li {
     margin: 10px;
   }
-  .footer .footerContent .footerContentBox:nth-child(3) .footerContentBoxIconContent p {
+  .footer
+    .footerContent
+    .footerContentBox:nth-child(3)
+    .footerContentBoxIconContent
+    p {
     text-align: center;
   }
   .footer .footerContent .footerContentBoxOne {
@@ -2183,7 +3139,12 @@ body {
   .work .workRace .workRaceContent svg {
     width: 9000%;
   }
-  .work .workContent .workContentText .workContentTextContent .workRaceViceTitle h1 {
+  .work
+    .workContent
+    .workContentText
+    .workContentTextContent
+    .workRaceViceTitle
+    h1 {
     font-size: 70px;
   }
 }
