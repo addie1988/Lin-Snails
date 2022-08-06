@@ -843,7 +843,7 @@ body {
   .main .mainContent .about .aboutContent .aboutText::before {
     width: 100%;
     right: 0;
-    border-radius: 0;
+    border-bottom-left-radius: 30vw;
   }
   .main .mainContent .about .aboutContent .aboutText .aboutTextCpntent {
     grid-column: 1/2;
