@@ -82,6 +82,17 @@ body
         position: relative
         .about
             position: relative
+            &::before
+                content: ""
+                width: 50%
+                height: 137%
+                display: inline-block
+                position: absolute
+                top: -229px
+                right: 0
+                z-index: 1
+                background-color: $background-color_main
+                border-bottom-left-radius: 30vw
             .aboutContent
                 max-width: 1366px
                 margin-left: auto
@@ -110,17 +121,6 @@ body
                     position: relative
                     z-index: 5
                     padding: 50px 0 160px 0
-                    &::before
-                        content: ""
-                        width: 150%
-                        height: 137%
-                        display: inline-block
-                        position: absolute
-                        top: -229px
-                        right: -229px
-                        z-index: -1
-                        background-color: $background-color_main
-                        border-bottom-left-radius: 20vw
                 .aboutTextCpntent
                     text-align: right
                     display: grid
@@ -184,6 +184,11 @@ body
     .main
         .mainContent
             .about
+                &::before
+                    width: 100%
+                    height: 100%
+                    right: 0
+                    border-bottom-left-radius: 30vw
                 .aboutContent
                     grid-column: 1 / 2
                     grid-template-columns: repeat(1, 100%)
@@ -197,10 +202,6 @@ body
                         grid-column: 1 / 2
                         grid-row: 1 / 2
                         padding: 50px 0 60px 0
-                        &::before
-                            width: 100%
-                            right: 0
-                            border-bottom-left-radius: 30vw
                         .aboutTextCpntent
                             grid-column: 1 / 2
                             grid-template-columns: repeat(1, 100%)
@@ -235,11 +236,11 @@ body
             display: none
         .mainContent
             .about
+                &::before
+                    border-bottom-left-radius: 30vw
                 .aboutContent
                     .aboutText
                         height: 700px
-                        &::before
-                            border-bottom-left-radius: 30vw
                     .aboutTextCpntent
                         span
                             font-size: 20px
