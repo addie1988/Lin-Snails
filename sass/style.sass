@@ -408,7 +408,6 @@ body
                         justify-content: center
                         margin-left: auto
                         margin-right: auto
-                        background-color: #fff
                         border-radius: 30px
                         overflow: hidden
                         border: 15px solid $background-color_main
@@ -1015,20 +1014,6 @@ body
                     display: flex
                     align-items: center
                     justify-content: center
-                    &:hover
-                        a
-                            .workRaceViceMoreContent
-                                svg
-                                    animation: workRaceViceMoreMove 60s infinite
-                                @keyframes workRaceViceMoreMove
-                                    0%
-                                        transform: rotate(0deg)
-
-                                    50%
-                                        transform: rotate(360deg)
-
-                                    100%
-                                        transform: rotate(0deg)
                     a
                         color: #000
                         font-size: 20px
@@ -1041,6 +1026,16 @@ body
                             left: 0
                             width: 150px
                             height: 150px
+                            animation: workRaceViceMoreMove 60s infinite
+                            @keyframes workRaceViceMoreMove
+                                0%
+                                    transform: rotate(0deg)
+
+                                50%
+                                    transform: rotate(360deg)
+
+                                100%
+                                    transform: rotate(0deg)
                             svg
                                 width: 100%
                             .workRaceViceMoreText

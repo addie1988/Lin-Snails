@@ -1106,7 +1106,6 @@ body {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: #fff;
   border-radius: 30px;
   overflow: hidden;
   border: 15px solid #f2b43d;
@@ -1908,22 +1907,6 @@ body {
   justify-content: center;
 }
 
-.work .workContent .workContentText .workContentTextContent .workRaceViceMore:hover a .workRaceViceMoreContent svg {
-  animation: workRaceViceMoreMove 60s infinite;
-}
-
-@keyframes workRaceViceMoreMove {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
 .work .workContent .workContentText .workContentTextContent .workRaceViceMore a {
   color: #000;
   font-size: 20px;
@@ -1938,6 +1921,19 @@ body {
   left: 0;
   width: 150px;
   height: 150px;
+  animation: workRaceViceMoreMove 60s infinite;
+}
+
+@keyframes workRaceViceMoreMove {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .work .workContent .workContentText .workContentTextContent .workRaceViceMore a .workRaceViceMoreContent svg {
