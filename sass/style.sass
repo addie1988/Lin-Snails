@@ -67,7 +67,7 @@ body
         width: 351px
         height: 351px
         display: inline-block
-        position: absolute
+        position: fixed
         top: -100px
         right: -100px
         z-index: 6
@@ -116,16 +116,19 @@ body
                         left: 0
                         bottom: 0
                         background: url("../images/figure3.png") no-repeat center center
+                        background-attachment: fixed
                 .aboutText
                     grid-column: 2 / 3
                     position: relative
                     z-index: 5
                     padding: 50px 0 160px 0
+                    display: flex
+                    justify-content: center
                 .aboutTextCpntent
                     text-align: right
                     display: grid
                     grid-column: 1 / 2
-                    grid-template-columns: repeat(1, 100%)
+                    grid-template-columns: repeat(1, auto)
                     grid-template-rows: repeat(1, auto)
                     justify-content: right
                     span
@@ -205,13 +208,15 @@ body
                         .aboutTextCpntent
                             grid-column: 1 / 2
                             grid-template-columns: repeat(1, 100%)
-                            grid-template-rows: repeat(2, auto)
+                            grid-template-rows: repeat(2, 100px)
                             span
                                 grid-column: 1 / 2
                                 text-align: center
+                                padding-bottom: 40px
                             h1
                                 grid-column: 1 / 2
                                 text-align: center
+                                padding-bottom: 40px
                             .aboutTextBox
                                 flex-direction: row-reverse
                                 margin-left: auto
@@ -275,11 +280,13 @@ body
         margin: 0 auto
         .serviceTitle
             position: relative
+            display: flex
             .serviceTitleContent
                 max-width: $max-width
                 text-align: center
                 margin-left: auto
                 margin-right: auto
+                display: inline-block
                 span
                     font-style: italic
                 h1
@@ -321,6 +328,8 @@ body
                     letter-spacing: 8px
                     margin-left: auto
                     margin-right: auto
+                    &:hover
+                        cursor: pointer
                     p
                         display: inline-block
                         font-size: 16px
@@ -373,7 +382,6 @@ body
                         margin-right: auto
                         background-color: $background-color_main
                         border-radius: 30px
-                        box-shadow: 1px 1px 1px 0 #f2b33d64
                         .news-contentImgContent
                             max-width: 200px
                             max-height: 200px
@@ -385,28 +393,6 @@ body
                             padding: 30px
                             border-radius: 50%
                             background-color: $background-color_main
-                            &::before
-                                content: ""
-                                width: 100%
-                                height: 100%
-                                display: inline-block
-                                position: absolute
-                                border-top: 1px solid #ffffff00
-                                border-left: 1px solid #ffffff00
-                                border-bottom: 1px solid #ffffff00
-                                border-right: 1px solid #ffffff00
-                                border-radius: 50%
-                                transition: 1s ease-in-out
-                                animation: contentImgContentMove 1s infinite
-                                @keyframes contentImgContentMove
-                                    0%
-                                        border-top: 4px solid #fff
-                                    40%
-                                        border-left: 4px solid #fff
-                                    70%
-                                        border-bottom: 4px solid #fff
-                                    100%
-                                        border-right: 4px solid #fff
                             img
                                 display: inline-block
                                 width: 100%
@@ -442,7 +428,8 @@ body
                                 margin-right: auto
                                 span
                                     width: 90%
-                                    font-size: 58px
+                                    display: inline-block
+                                    font-size: 70px
                                     color: transparent
                                     -webkit-text-stroke: 1px #fff
                                     padding: 10px 0
@@ -548,7 +535,7 @@ body
                     display: grid
                     grid-column: 1 / 2
                     width: 70%
-                    height: 30px
+                    height: 60px
                     top: 30px
                     left: 0
                     border-radius: 0
@@ -563,11 +550,11 @@ body
                     animation: news-headlinesMove 10s infinite
                     @keyframes news-headlinesMove
                         0%
-                            transform: translateY(-100px)
+                            transform: translateY(-80px)
                         50%
                             transform: translateY(0px)
                         100%
-                            transform: translateY(-100px)
+                            transform: translateY(-80px)
                     &::before
                         content: ""
                         width: 100%
@@ -577,6 +564,7 @@ body
                         bottom: 0
                         z-index: 1
                         background: url(../images/figure3.png) no-repeat center center
+                        background-attachment: fixed
                         transition: 1s ease-in-out
                     .headlinesOne
                         grid-column: 1 / 2
@@ -1027,6 +1015,20 @@ body
                     display: flex
                     align-items: center
                     justify-content: center
+                    &:hover
+                        a
+                            .workRaceViceMoreContent
+                                svg
+                                    animation: workRaceViceMoreMove 60s infinite
+                                @keyframes workRaceViceMoreMove
+                                    0%
+                                        transform: rotate(0deg)
+
+                                    50%
+                                        transform: rotate(360deg)
+
+                                    100%
+                                        transform: rotate(0deg)
                     a
                         color: #000
                         font-size: 20px
