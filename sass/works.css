@@ -434,8 +434,12 @@ body {
   width: 50%;
 }
 
+.header .headerContent .navbarContent .logo a {
+  display: inline-block;
+}
+
 .header .headerContent .navbarContent .logo a .logoContent {
-  position: fixed;
+  position: relative;
   z-index: 9;
   display: inline-block;
 }
@@ -465,12 +469,13 @@ body {
 .header .headerContent .navbarContent .menu .menuContent ul li {
   line-height: 3;
   text-align: right;
+  position: relative;
 }
 
 .header .headerContent .navbarContent .menu .menuContent ul li a {
   color: #000;
+  padding: 20px;
   text-decoration: none;
-  position: relative;
   font-size: 16px;
   transition: .5s ease-in-out;
 }
@@ -480,7 +485,7 @@ body {
 }
 
 .header .headerContent .navbarContent .menu .menuContent ul li a:hover::before {
-  width: 30px;
+  width: 20%;
   opacity: 1;
 }
 
@@ -489,7 +494,7 @@ body {
   width: 0;
   height: 2px;
   position: absolute;
-  top: 10px;
+  top: 50%;
   left: -30px;
   opacity: 0;
   display: inline-block;
@@ -1134,7 +1139,7 @@ body {
 }
 
 .main .mainContent #works .works-content .jprt-container .jprt-item .layout #project_area .project_areaContent .project_areaContentText .project_areaContentTextContent .project_areaContentTextContentBox ul li {
-  width: 80%;
+  width: 100%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
