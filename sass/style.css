@@ -495,7 +495,7 @@ body {
   height: 2px;
   position: absolute;
   top: 50%;
-  left: -30px;
+  left: 0;
   opacity: 0;
   display: inline-block;
   background-color: #fff;
@@ -1418,7 +1418,7 @@ body {
   overflow: hidden;
   padding: 40px 0 40px 0;
   background-color: #f2b43d;
-  border-top-right-radius: 200px;
+  border-top-right-radius: 360px;
 }
 
 .work .workContent .workContentImg .workContentImgContent ul {
