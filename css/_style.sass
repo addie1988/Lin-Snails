@@ -1,0 +1,117 @@
+@import "_reset.sass"
+
+// ----------------------------------------------------------------    
+
+@font-face
+    font-family: 'ZenKakuGothicNew-Black'
+    src: url('../font/ZenKakuGothicNew-Black.ttf')
+
+@font-face
+    font-family: 'BlackOpsOne-Regular'
+    src: url('../font/BlackOpsOne-Regular.ttf')
+
+$max_1400_max-width: 1400px
+$header_logo: 50%
+$header_menu: 50%
+$min_position_relative: relative
+$min_position_absolute: absolute
+$min_50_font-size: 50px
+$min_60_font-size: 60px
+$min_24_font-size: 24px
+$min_18_font-size: 18px
+$min_16_font-size: 16px
+$menu_text_font-size: 30px
+$chinese_font: ZenKakuGothicNew-Black
+$main_background-color: #FFC700
+
+%display_flex
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+
+// ----------------------------------------------------------------  
+
+    // 滾差效果
+body, html
+    margin: 0
+    padding: 0
+    // overflow-x: hidden
+    font-family: Arial, sans-serif
+
+/* 基本設置 */
+.parallax-section
+    position: relative
+    height: 100vh
+
+    .section-content
+        position: relative
+        z-index: 2
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 100%
+        color: white
+        font-size: 3em
+
+/* 不同背景圖片 */
+.parallax-bg1
+    overflow: hidden
+    background-image: url('../images/Component4.svg')
+    background-size: cover
+
+.parallax-bg3
+    width: 100%
+    height: 100%
+    background-image: url('../images/Frame18.svg')
+    background-size: auto
+
+.parallax-bg4
+    background-image: url('../images/group5.svg')
+    background-size: cover
+
+.static-section
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #000
+    font-size: 2em
+
+.static-section_work
+    position: $min_position_relative
+    &::before
+        content: ''
+        width: 100%
+        height: 100%
+        position: $min_position_absolute
+        left: 0
+        top: 0
+        opacity: .5
+        background-color: #000000
+
+// ----------------------------------------------------------------  
+
+#header
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+
+#service
+    height: 100%
+    display: flex
+    align-items: center
+
+#contact
+    height: 100%
+    @extend  %display_flex
+    position: $min_position_relative
+
+// ----------------------------------------------------------------      
+
+@media screen and (max-width: 1186px)
+    .parallax-bg3
+        height: auto

@@ -1,0 +1,380 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, sm, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'ZenKakuGothicNew-Black';
+  src: url("../font/ZenKakuGothicNew-Black.ttf");
+}
+
+@font-face {
+  font-family: 'BlackOpsOne-Regular';
+  src: url("../font/BlackOpsOne-Regular.ttf");
+}
+
+.parallax-section .section-content #works, .parallax-section .section-content #works #filter-buttons, .parallax-section .section-content #works .works .works_content, .parallax-section .section-content #works .works .works_content #gallery, .parallax-section .section-content #works .works .works_content #gallery .gallery-item .openModalBtn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax-section {
+  position: relative;
+}
+
+.parallax-section .section-content {
+  margin: 0 auto;
+}
+
+.parallax-section .section-content #works {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0px 0px 144px 0px;
+  /* 當內容浮出時的樣式 */
+  /* 當內容滑出時的樣式 */
+}
+
+.parallax-section .section-content #works .works_menu {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.parallax-section .section-content #works .show {
+  position: fixed;
+  z-index: 4;
+  opacity: 1;
+}
+
+.parallax-section .section-content #works .hide {
+  opacity: 0;
+}
+
+.parallax-section .section-content #works #filter-buttons {
+  width: 100%;
+  background-color: #fff;
+  border: 6px solid #FFC700;
+  border-top-left-radius: 60px;
+  position: relative;
+}
+
+.parallax-section .section-content #works #filter-buttons::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: url("../images/Frame18.svg");
+  position: absolute;
+  z-index: 1;
+}
+
+.parallax-section .section-content #works #filter-buttons .filter-btn {
+  padding: 20px;
+  margin: 5px;
+  cursor: pointer;
+  color: #000;
+  font-size: 16px;
+  position: relative;
+  z-index: 3;
+}
+
+.parallax-section .section-content #works .works {
+  width: 1400px;
+  position: relative;
+}
+
+.parallax-section .section-content #works .works .works_content {
+  margin: 0 auto;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item {
+  width: 23%;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .gallery-item_a a {
+  display: inline-block;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .gallery-item_a a img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .openModalBtn {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .openModalBtn img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal {
+  display: none;
+  position: fixed;
+  z-index: 6;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active {
+  display: block;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content {
+  background: url("../images/Component7.svg");
+  background-color: #FFC700;
+  background-size: contain;
+  filter: drop-shadow(2px 4px 6px black);
+  width: 100%;
+  overflow: hidden;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_header {
+  width: 1400px;
+  position: relative;
+  top: 0;
+  margin-bottom: 100px;
+  margin: 0 auto;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_header .myModal_header_content {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_header .myModal_header_content .myModal_logo {
+  width: 50%;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_header .myModal_header_content .myModal_logo .myModal_logo_content {
+  text-align: left;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_header .myModal_header_content .closeBtn {
+  width: 50%;
+  margin-top: 47px;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_header .myModal_header_content .closeBtn .closeBtn_content {
+  text-align: right;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_min {
+  position: relative;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_min .myModal_min_content {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_min .myModal_min_content .myModal_text {
+  width: 700px;
+  position: relative;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_min .myModal_min_content .myModal_text .myModal_text_content {
+  margin: 0 auto;
+  text-align: left;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_min .myModal_min_content .myModal_text .myModal_text_content b {
+  color: #000000;
+  font-size: 24px;
+  font-family: 'BlackOpsOne-Regular';
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_min .myModal_min_content .myModal_text .myModal_text_content p {
+  color: #000000;
+  font-size: 16px;
+  margin-top: 20px;
+  line-height: 2.4;
+  word-break: break-all;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_min .myModal_min_content span {
+  width: 100%;
+  display: inline-block;
+  border: 3px solid #fff;
+  border-style: dashed;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_min .myModal_min_content .tool {
+  position: relative;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_min .myModal_min_content .tool .tool_content {
+  text-align: left;
+  line-height: 2;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_min .myModal_min_content .tool .tool_content b {
+  color: #000000;
+  font-size: 24px;
+  font-family: 'BlackOpsOne-Regular';
+  font-weight: 900;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_min .myModal_min_content .tool .tool_content ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_min .myModal_min_content .myModal_img {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 109px;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_min .myModal_min_content .myModal_img .myModal_img_content {
+  margin: 0 auto;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_min .myModal_min_content .myModal_img .myModal_img_content ul {
+  line-height: 1.4;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_min .myModal_min_content .myModal_img .myModal_img_content ul li img {
+  width: 100%;
+  height: auto;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_slogan {
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: -38px;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_slogan .myModal_slogan_content {
+  margin: 0 auto;
+  /* 跑馬燈容器 */
+  /* 跑馬燈內容 */
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_slogan .myModal_slogan_content .marquee_myModal {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  color: white;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal-active .modal-content .myModal_slogan .myModal_slogan_content .marquee_myModal {
+  display: inline-block;
+  white-space: nowrap;
+  font-family: "BlackOpsOne-Regular";
+  font-weight: 600;
+  font-size: 160px;
+  animation: scroll-left 10s linear infinite;
+}
+
+.parallax-section .section-content #works .works .works_content #gallery .hidden {
+  display: none;
+}
+
+@media screen and (max-width: 970px) {
+  .parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal .modal-content .myModal_header {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal .modal-content .myModal_min {
+    width: 100%;
+  }
+  .parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal .modal-content .myModal_min .myModal_min_content {
+    width: 100%;
+  }
+  .parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal .modal-content .myModal_min .myModal_min_content .myModal_text {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal .modal-content .myModal_min .myModal_min_content span {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal .modal-content .myModal_min .myModal_min_content .tool {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .parallax-section .section-content #works .works .works_content #gallery .gallery-item .modal .modal-content .myModal_min .myModal_min_content .myModal_img {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .parallax-section .section-content #works .works_menu {
+    right: 0;
+    bottom: 0;
+  }
+  .parallax-section .section-content #works .works .works_content #gallery .gallery-item {
+    width: 42%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .parallax-section .section-content #works .works_menu {
+    position: relative;
+  }
+  .parallax-section .section-content #works .works .works_content #gallery .gallery-item {
+    width: 90%;
+  }
+}

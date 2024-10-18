@@ -1,0 +1,166 @@
+@import "_reset.sass"
+
+// ----------------------------------------------------------------    
+
+@font-face
+    font-family: 'ZenKakuGothicNew-Black'
+    src: url('../font/ZenKakuGothicNew-Black.ttf')
+
+@font-face
+    font-family: 'BlackOpsOne-Regular'
+    src: url('../font/BlackOpsOne-Regular.ttf')
+
+$max_1400_max-width: 1400px
+$header_logo: 50%
+$header_menu: 50%
+$min_position_relative: relative
+$min_position_absolute: absolute
+$min_50_font-size: 50px
+$min_60_font-size: 60px
+$min_24_font-size: 24px
+$min_18_font-size: 18px
+$min_16_font-size: 16px
+$menu_text_font-size: 30px
+$chinese_font: ZenKakuGothicNew-Black
+$main_background-color: #FFC700
+
+%display_flex
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+
+// ---------------------------------------------------------------- 
+
+.about
+    position: $min_position_relative
+    width: $max_1400_max-width
+    .about_content
+        @extend %display_flex
+        padding: 0 130px
+        .about_img
+            width: 50%
+            position: $min_position_relative
+            width: 50%
+            position: relative
+            display: flex
+            &::after
+                content: ''
+                width: 166px
+                border: 3px solid $main_background-color
+                position: $min_position_absolute
+                right: -119px
+                top: 50%
+            &::before
+                content: 'About'
+                position: $min_position_absolute
+                font-size: $min_50_font-size
+                font-family: $chinese_font
+                font-style: italic
+                right: -120px
+                top: 37%
+            .about_img_content
+                position: $min_position_relative
+                @extend %display_flex
+                &::after
+                    content: ''
+                    width: 436px
+                    height: 436px
+                    position: $min_position_absolute
+                    background-color: $main_background-color
+                    border-radius: 50%
+                    z-index: -1
+                &::before
+                    content: ''
+                    width: 468px
+                    height: 468px
+                    position: $min_position_absolute
+                    left: 46px
+                    border: 3px solid $main_background-color
+                    border-radius: 50%
+                    z-index: -1
+                img
+                    width: 458px
+                    height: 458px
+        .about_text
+            width: 50%
+            .about_text_content
+                margin: 0 auto
+                display: flex
+                justify-content: flex-end
+                p
+                    writing-mode: vertical-rl
+                    font-family: monospace
+                    font-size: 24px
+                    height: 300px
+                    line-height: 2
+                    padding-left: 60px
+                    margin-left: 60px
+                    border-left: 3px solid $main_background-color
+                    border-style: dashed
+
+// ---------------------------------------------------------------------        
+
+@media screen and (max-width: 1160px)
+    .static-section
+        height: auto
+        #about
+        .about
+            width: 100%
+            z-index: 2
+            .about_content
+                padding: 60px
+                .about_img
+                    width: auto
+                    display: block
+                    &::before
+                        z-index: 2
+                        left: 53%
+                        top: 107%
+                    &::after
+                        width: 0px
+                        height: 90px
+                        border: 3px solid $main_background-color
+                        left: 50%
+                        top: 97%
+                    .about_img_content
+                        &::before
+                            left: auto
+                            top: 14px
+                .about_text
+                    width: 100%
+                    margin-top: 40px
+                    .about_text_content
+                        justify-content: center
+                        p
+                            border-left: 0px solid
+                            padding-left: 0px
+                            margin-left: 0px
+                            border-top: 3px solid $main_background-color
+                            border-style: dashed
+                            padding-top: 60px
+                            margin-top: 60px
+
+@media screen and (max-width: 480px)
+    .static-section
+        #about
+        .about
+            .about_content
+                .about_img
+                    width: 25%
+                    &::before
+                    &::after
+                        top: 92%
+                    .about_img_content
+                        &::before
+                            width: 8em
+                            height: 8em
+                        &::after
+                            width: 7em
+                            height: 7em
+                        img
+                            width: 80vw
+                            height: auto
+                .about_text
+                    .about_text_content
+                        p

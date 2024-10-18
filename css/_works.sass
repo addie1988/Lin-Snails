@@ -1,0 +1,281 @@
+@import "_reset.sass"
+
+// ----------------------------------------------------------------    
+
+@font-face
+    font-family: 'ZenKakuGothicNew-Black'
+    src: url('../font/ZenKakuGothicNew-Black.ttf')
+
+@font-face
+    font-family: 'BlackOpsOne-Regular'
+    src: url('../font/BlackOpsOne-Regular.ttf')
+
+$max_1400_max-width: 1400px
+$header_logo: 50%
+$header_menu: 50%
+$min_position_relative: relative
+$min_position_absolute: absolute
+$min_50_font-size: 50px
+$min_60_font-size: 60px
+$min_24_font-size: 24px
+$min_18_font-size: 18px
+$min_16_font-size: 16px
+$menu_text_font-size: 30px
+$chinese_font: ZenKakuGothicNew-Black
+$main_background-color: #FFC700
+
+%display_flex
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+
+// ----------------------------------------------------------------       
+.parallax-section
+    position: $min_position_relative
+    .section-content
+        margin: 0 auto
+        #works
+            width: 100%
+            height: 100%
+            @extend %display_flex
+            position: $min_position_relative
+            margin: 0px 0px 144px 0px
+            .works_menu
+                position: $min_position_absolute
+                right: 30px
+                bottom: 30px
+                opacity: 0
+                transition: opacity 0.5s ease
+            /* 當內容浮出時的樣式 */    
+            .show
+                position: fixed
+                z-index: 4
+                opacity: 1
+            /* 當內容滑出時的樣式 */    
+            .hide
+                opacity: 0
+            #filter-buttons
+                width: 100%
+                background-color: #fff
+                border: 6px solid $main_background-color
+                border-top-left-radius: 60px
+                position: $min_position_relative
+                @extend %display_flex
+                &::after
+                    content: ''
+                    width: 100%
+                    height: 100%
+                    display: inline-block
+                    background: url('../images/Frame18.svg') 
+                    position: $min_position_absolute
+                    z-index: 1
+                .filter-btn
+                    padding: 20px
+                    margin: 5px
+                    cursor: pointer
+                    color: #000
+                    font-size: $min_16_font-size
+                    position: $min_position_relative
+                    z-index: 3
+            .works
+                width: $max_1400_max-width
+                position: $min_position_relative
+                .works_content
+                    margin: 0 auto
+                    @extend %display_flex
+                    #gallery
+                        @extend %display_flex
+                        .gallery-item
+                            width: 23%
+                            height: 100%
+                            padding: 10px
+                            text-align: center
+                            position: $min_position_relative
+                            .gallery-item_a
+                                a
+                                    display: inline-block
+                                    img
+                                        width: 100%
+                                        height: auto
+                                        border-radius: 20px
+                            .openModalBtn
+                                @extend %display_flex
+                                white-space: nowrap
+                                overflow: hidden
+                                img
+                                    width: 100%
+                                    height: 100%
+                                    border-radius: 20px
+                            .modal
+                                display: none
+                                position: fixed
+                                z-index: 6
+                                left: 0
+                                top: 0
+                                width: 100%
+                                height: 100%
+                                overflow: auto
+                            .modal-active
+                                display: block
+                                .modal-content
+                                    background: url('../images/Component7.svg')
+                                    background-color: $main_background-color
+                                    background-size: contain
+                                    filter: drop-shadow(2px 4px 6px black)
+                                    width: 100%
+                                    overflow: hidden
+                                    .myModal_header
+                                        width: $max_1400_max-width
+                                        position: $min_position_relative
+                                        top: 0
+                                        margin-bottom: 100px
+                                        margin: 0 auto
+                                        .myModal_header_content
+                                            margin: 0 auto
+                                            display: flex
+                                            justify-content: center
+                                            .myModal_logo
+                                                width: 50%
+                                                .myModal_logo_content
+                                                    text-align: left
+                                            .closeBtn
+                                                width: 50%
+                                                margin-top: 47px
+                                                .closeBtn_content
+                                                    text-align: right
+                                    .myModal_min
+                                        position: $min_position_relative
+                                        .myModal_min_content
+                                            width: 700px
+                                            margin: 0 auto
+                                            .myModal_text
+                                                width: 700px
+                                                position: $min_position_relative
+                                                .myModal_text_content
+                                                    margin: 0 auto
+                                                    text-align: left
+                                                    b
+                                                        color: #000000
+                                                        font-size: $min_24_font-size
+                                                        font-family: 'BlackOpsOne-Regular'
+                                                    p
+                                                        color: #000000
+                                                        font-size: $min_16_font-size
+                                                        margin-top: 20px
+                                                        line-height: 2.4
+                                                        word-break: break-all
+                                            span
+                                                width: 100%
+                                                display: inline-block
+                                                border: 3px solid #fff
+                                                border-style: dashed
+                                            .tool
+                                                position: $min_position_relative
+                                                .tool_content
+                                                    text-align: left
+                                                    line-height: 2
+                                                    b
+                                                        color: #000000
+                                                        font-size: $min_24_font-size
+                                                        font-family: 'BlackOpsOne-Regular'
+                                                        font-weight: 900
+                                                    ul
+                                                        display: flex
+                                                        flex-wrap: wrap
+                                                        justify-content: flex-start
+                                            .myModal_img
+                                                position: $min_position_relative
+                                                margin-top: 40px
+                                                margin-bottom: 109px
+                                                .myModal_img_content
+                                                    margin: 0 auto
+                                                    ul
+                                                        line-height: 1.4
+                                                        li
+                                                            img
+                                                                width: 100%
+                                                                height: auto
+                                    .myModal_slogan
+                                        position: $min_position_relative
+                                        left: 0
+                                        right: 0
+                                        bottom: -38px
+                                        .myModal_slogan_content
+                                            margin: 0 auto
+                                            /* 跑馬燈容器 */
+                                            .marquee_myModal
+                                                width: 100%
+                                                overflow: hidden
+                                                white-space: nowrap
+                                                color: white
+                                            /* 跑馬燈內容 */
+                                            .marquee_myModal
+                                                display: inline-block
+                                                white-space: nowrap
+                                                font-family: "BlackOpsOne-Regular"
+                                                font-weight: 600
+                                                font-size: 160px
+                                                animation: scroll-left 10s linear infinite
+                        .hidden
+                            display: none
+
+// ----------------------------------------------------------------    
+
+@media screen and (max-width: 970px)
+    .parallax-section
+        .section-content
+            #works
+                .works_menu
+                .works
+                    .works_content
+                        #gallery
+                            .gallery-item
+                                .openModalBtn
+                                .modal
+                                    .modal-content
+                                        .myModal_header
+                                            width: 100%
+                                            padding: 0 10px
+                                        .myModal_min
+                                            width: 100%
+                                            .myModal_min_content
+                                                width: 100%
+                                                .myModal_text
+                                                    width: 90%
+                                                    margin: 0 auto
+                                                span
+                                                    width: 90%
+                                                    margin: 0 auto
+                                                .tool
+                                                    width: 90%
+                                                    margin: 0 auto
+                                                .myModal_img
+                                                    width: 90%
+                                                    margin: 0 auto
+                                                    margin-top: 40px
+
+@media screen and (max-width: 800px)
+    .parallax-section
+        .section-content
+            #works
+                .works_menu
+                    right: 0
+                    bottom: 0
+                .works
+                    .works_content
+                        #gallery
+                            .gallery-item
+                                width: 42%
+
+@media screen and (max-width: 800px)
+    .parallax-section
+        .section-content
+            #works
+                .works_menu
+                    position: $min_position_relative
+                .works
+                    .works_content
+                        #gallery
+                            .gallery-item
+                                width: 90%

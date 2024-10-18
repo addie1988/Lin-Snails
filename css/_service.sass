@@ -1,0 +1,295 @@
+@import "_reset.sass"
+
+// ----------------------------------------------------------------    
+
+@font-face
+    font-family: 'ZenKakuGothicNew-Black'
+    src: url('../font/ZenKakuGothicNew-Black.ttf')
+
+@font-face
+    font-family: 'BlackOpsOne-Regular'
+    src: url('../font/BlackOpsOne-Regular.ttf')
+
+$max_1400_max-width: 1400px
+$header_logo: 50%
+$header_menu: 50%
+$min_position_relative: relative
+$min_position_absolute: absolute
+$min_50_font-size: 50px
+$min_60_font-size: 60px
+$min_24_font-size: 24px
+$min_18_font-size: 18px
+$min_16_font-size: 16px
+$menu_text_font-size: 30px
+$chinese_font: ZenKakuGothicNew-Black
+$main_background-color: #FFC700
+
+%display_flex
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+
+// ---------------------------------------------------------------- 
+
+.service
+    position: $min_position_relative
+    width: $max_1400_max-width
+    height: 100%
+    .service_content
+        margin: 0 auto
+        padding: 170px 0
+        .service_title
+            position: $min_position_relative
+            margin-top: 34px
+            .service_title_content
+                margin: 0 auto
+                display: flex
+                justify-content: center
+                p
+                    display: inline-block
+                    color: #000
+                    font-size: $min_50_font-size
+                    font-family: $chinese_font
+        .service_text
+            position: $min_position_relative
+            margin-top: 37px
+            .service_text_content
+                margin: 0 auto
+                display: flex
+                align-items: flex-start
+                @extend %display_flex
+                .brand
+                    width: 30%
+                    position: $min_position_relative
+                    .brand_content
+                        margin: 0 auto
+                        .brand_img
+                            display: flex
+                            justify-content: center
+                            .brand_img_content
+                                width: 200px
+                                height: 200px
+                                @extend %display_flex
+                                background-color: $main_background-color
+                                border-radius: 50%
+                                img
+                                    width: 160px
+                                    height: 160px
+                        .brand_text
+                            display: none
+                            position: $min_position_relative
+                            &::after
+                                content: ''
+                                height: 80%
+                                border: 3px solid #FFC700
+                                border-style: dashed
+                                position: absolute
+                                z-index: -1
+                                top: 0
+                                left: 50%
+                            .brand_text_content
+                                margin: 0 auto
+                                ul
+                                    line-height: 2.2
+                                    .brand_text_text
+                                        a
+                                            color: #fff
+                                            background-color: $main_background-color
+                                            border-top-left-radius: 20px
+                                            border-top-right-radius: 0px
+                                            border-bottom-right-radius: 20px
+                                            border-bottom-left-radius: 0
+                                    li
+                                        width: 100%
+                                        display: inline-block
+                                        text-align: center
+                                        a
+                                            width: 60%
+                                            color: #000
+                                            display: inline-block
+                                            text-decoration: none
+                                            background-color: #fff
+                                            padding: 2px 30px
+                                            margin: 10px 0
+                                            border-radius: 60px
+                                            border: 3px solid $main_background-color
+                                            transition: background-color 1s ease
+                                            &:hover
+                                                color: #fff
+                                                background-color: $main_background-color
+                                            p
+                                                font-size: $min_24_font-size
+                .flat
+                    width: 30%
+                    position: $min_position_relative
+                    .flat_content
+                        margin: 0 auto
+                        .flat_img
+                            display: flex
+                            justify-content: center
+                        .flat_img_content
+                            width: 200px
+                            height: 200px
+                            @extend %display_flex
+                            background-color: $main_background-color
+                            border-radius: 50%
+                            img
+                                width: 160px
+                                height: 160px
+                        .flat_text
+                            display: none
+                            position: $min_position_relative
+                            &::after
+                                content: ''
+                                height: 80%
+                                border: 3px solid #FFC700
+                                border-style: dashed
+                                position: absolute
+                                z-index: -1
+                                top: 0
+                                left: 50%
+                            .flat_text_content
+                                margin: 0 auto
+                                ul
+                                    line-height: 2.2
+                                    .flat_text_text
+                                        a
+                                            color: #fff
+                                            background-color: $main_background-color
+                                            border-top-left-radius: 20px
+                                            border-top-right-radius: 0px
+                                            border-bottom-right-radius: 20px
+                                            border-bottom-left-radius: 0
+                                    li
+                                        width: 100%
+                                        display: inline-block
+                                        text-align: center
+                                        a
+                                            width: 60%
+                                            color: #000
+                                            display: inline-block
+                                            text-decoration: none
+                                            background-color: #fff
+                                            padding: 2px 30px
+                                            margin: 10px 0
+                                            border-radius: 60px
+                                            border: 3px solid $main_background-color
+                                            transition: background-color 1s ease
+                                            &:hover
+                                                color: #fff
+                                                background-color: $main_background-color
+                                            p
+                                                font-size: $min_24_font-size
+                .web
+                    width: 30%
+                    position: $min_position_relative
+                    .web_content
+                        margin: 0 auto
+                        .web_img
+                            display: flex
+                            justify-content: center
+                            .web_img_content
+                                width: 200px
+                                height: 200px
+                                @extend %display_flex
+                                background-color: $main_background-color
+                                border-radius: 50%
+                                img
+                                    width: 160px
+                                    height: 160px
+                        .web_text
+                            display: none
+                            position: $min_position_relative
+                            &::after
+                                content: ''
+                                height: 90%
+                                border: 3px solid #FFC700
+                                border-style: dashed
+                                position: absolute
+                                z-index: -1
+                                top: 0
+                                left: 50%
+                            .web_text_content
+                                margin: 0 auto
+                                ul
+                                    line-height: 2.2
+                                    .web_text_text
+                                        a
+                                            color: #fff
+                                            background-color: $main_background-color
+                                            border-top-left-radius: 20px
+                                            border-top-right-radius: 0px
+                                            border-bottom-right-radius: 20px
+                                            border-bottom-left-radius: 0
+                                    li
+                                        width: 100%
+                                        display: inline-block
+                                        text-align: center
+                                        a
+                                            width: 60%
+                                            color: #000
+                                            display: inline-block
+                                            text-decoration: none
+                                            background-color: #fff
+                                            padding: 2px 30px
+                                            margin: 10px 0
+                                            border-radius: 60px
+                                            border: 3px solid $main_background-color
+                                            transition: background-color 1s ease
+                                            &:hover
+                                                color: #fff
+                                                background-color: $main_background-color
+                                                transition: background-color 1s ease
+                                            p
+                                                font-size: $min_24_font-size
+
+// ----------------------------------------------------------------  
+
+@media screen and (max-width: 1186px)
+    #service
+        .service
+            width: 100%
+            .service_content
+                .service_title
+                .service_text
+                    .service_text_content
+                        .brand
+                            width: 100%
+                            margin: 40px 0
+                            .brand_content
+                                .brand_img
+                                .brand_text
+                                    .brand_text_content
+                                        display: flex
+                                        justify-content: center
+                                        ul
+                                            text-align: center
+                                            li
+                                                width: 50%
+                        .flat
+                            width: 100%
+                            margin: 40px 0
+                            .flat_content
+                                .flat_img
+                                .flat_text
+                                    .flat_text_content
+                                        display: flex
+                                        justify-content: center
+                                        ul
+                                            text-align: center
+                                            li
+                                                width: 8em
+                        .web
+                            width: 100%
+                            margin: 40px 0
+                            .web_content
+                                .web_img
+                                .web_text
+                                    .web_text_content
+                                        display: flex
+                                        justify-content: center
+                                        ul
+                                            text-align: center
+                                            li
+                                                width: 50%

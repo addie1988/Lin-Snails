@@ -1,0 +1,410 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, sm, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'ZenKakuGothicNew-Black';
+  src: url("../font/ZenKakuGothicNew-Black.ttf");
+}
+
+@font-face {
+  font-family: 'BlackOpsOne-Regular';
+  src: url("../font/BlackOpsOne-Regular.ttf");
+}
+
+.service .service_content .service_text .service_text_content, .service .service_content .service_text .service_text_content .brand .brand_content .brand_img .brand_img_content, .service .service_content .service_text .service_text_content .flat .flat_content .flat_img_content, .service .service_content .service_text .service_text_content .web .web_content .web_img .web_img_content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.service {
+  position: relative;
+  width: 1400px;
+  height: 100%;
+}
+
+.service .service_content {
+  margin: 0 auto;
+  padding: 170px 0;
+}
+
+.service .service_content .service_title {
+  position: relative;
+  margin-top: 34px;
+}
+
+.service .service_content .service_title .service_title_content {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.service .service_content .service_title .service_title_content p {
+  display: inline-block;
+  color: #000;
+  font-size: 50px;
+  font-family: ZenKakuGothicNew-Black;
+}
+
+.service .service_content .service_text {
+  position: relative;
+  margin-top: 37px;
+}
+
+.service .service_content .service_text .service_text_content {
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+.service .service_content .service_text .service_text_content .brand {
+  width: 30%;
+  position: relative;
+}
+
+.service .service_content .service_text .service_text_content .brand .brand_content {
+  margin: 0 auto;
+}
+
+.service .service_content .service_text .service_text_content .brand .brand_content .brand_img {
+  display: flex;
+  justify-content: center;
+}
+
+.service .service_content .service_text .service_text_content .brand .brand_content .brand_img .brand_img_content {
+  width: 200px;
+  height: 200px;
+  background-color: #FFC700;
+  border-radius: 50%;
+}
+
+.service .service_content .service_text .service_text_content .brand .brand_content .brand_img .brand_img_content img {
+  width: 160px;
+  height: 160px;
+}
+
+.service .service_content .service_text .service_text_content .brand .brand_content .brand_text {
+  display: none;
+  position: relative;
+}
+
+.service .service_content .service_text .service_text_content .brand .brand_content .brand_text::after {
+  content: '';
+  height: 80%;
+  border: 3px solid #FFC700;
+  border-style: dashed;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 50%;
+}
+
+.service .service_content .service_text .service_text_content .brand .brand_content .brand_text .brand_text_content {
+  margin: 0 auto;
+}
+
+.service .service_content .service_text .service_text_content .brand .brand_content .brand_text .brand_text_content ul {
+  line-height: 2.2;
+}
+
+.service .service_content .service_text .service_text_content .brand .brand_content .brand_text .brand_text_content ul .brand_text_text a {
+  color: #fff;
+  background-color: #FFC700;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 0;
+}
+
+.service .service_content .service_text .service_text_content .brand .brand_content .brand_text .brand_text_content ul li {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.service .service_content .service_text .service_text_content .brand .brand_content .brand_text .brand_text_content ul li a {
+  width: 60%;
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 2px 30px;
+  margin: 10px 0;
+  border-radius: 60px;
+  border: 3px solid #FFC700;
+  transition: background-color 1s ease;
+}
+
+.service .service_content .service_text .service_text_content .brand .brand_content .brand_text .brand_text_content ul li a:hover {
+  color: #fff;
+  background-color: #FFC700;
+}
+
+.service .service_content .service_text .service_text_content .brand .brand_content .brand_text .brand_text_content ul li a p {
+  font-size: 24px;
+}
+
+.service .service_content .service_text .service_text_content .flat {
+  width: 30%;
+  position: relative;
+}
+
+.service .service_content .service_text .service_text_content .flat .flat_content {
+  margin: 0 auto;
+}
+
+.service .service_content .service_text .service_text_content .flat .flat_content .flat_img {
+  display: flex;
+  justify-content: center;
+}
+
+.service .service_content .service_text .service_text_content .flat .flat_content .flat_img_content {
+  width: 200px;
+  height: 200px;
+  background-color: #FFC700;
+  border-radius: 50%;
+}
+
+.service .service_content .service_text .service_text_content .flat .flat_content .flat_img_content img {
+  width: 160px;
+  height: 160px;
+}
+
+.service .service_content .service_text .service_text_content .flat .flat_content .flat_text {
+  display: none;
+  position: relative;
+}
+
+.service .service_content .service_text .service_text_content .flat .flat_content .flat_text::after {
+  content: '';
+  height: 80%;
+  border: 3px solid #FFC700;
+  border-style: dashed;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 50%;
+}
+
+.service .service_content .service_text .service_text_content .flat .flat_content .flat_text .flat_text_content {
+  margin: 0 auto;
+}
+
+.service .service_content .service_text .service_text_content .flat .flat_content .flat_text .flat_text_content ul {
+  line-height: 2.2;
+}
+
+.service .service_content .service_text .service_text_content .flat .flat_content .flat_text .flat_text_content ul .flat_text_text a {
+  color: #fff;
+  background-color: #FFC700;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 0;
+}
+
+.service .service_content .service_text .service_text_content .flat .flat_content .flat_text .flat_text_content ul li {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.service .service_content .service_text .service_text_content .flat .flat_content .flat_text .flat_text_content ul li a {
+  width: 60%;
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 2px 30px;
+  margin: 10px 0;
+  border-radius: 60px;
+  border: 3px solid #FFC700;
+  transition: background-color 1s ease;
+}
+
+.service .service_content .service_text .service_text_content .flat .flat_content .flat_text .flat_text_content ul li a:hover {
+  color: #fff;
+  background-color: #FFC700;
+}
+
+.service .service_content .service_text .service_text_content .flat .flat_content .flat_text .flat_text_content ul li a p {
+  font-size: 24px;
+}
+
+.service .service_content .service_text .service_text_content .web {
+  width: 30%;
+  position: relative;
+}
+
+.service .service_content .service_text .service_text_content .web .web_content {
+  margin: 0 auto;
+}
+
+.service .service_content .service_text .service_text_content .web .web_content .web_img {
+  display: flex;
+  justify-content: center;
+}
+
+.service .service_content .service_text .service_text_content .web .web_content .web_img .web_img_content {
+  width: 200px;
+  height: 200px;
+  background-color: #FFC700;
+  border-radius: 50%;
+}
+
+.service .service_content .service_text .service_text_content .web .web_content .web_img .web_img_content img {
+  width: 160px;
+  height: 160px;
+}
+
+.service .service_content .service_text .service_text_content .web .web_content .web_text {
+  display: none;
+  position: relative;
+}
+
+.service .service_content .service_text .service_text_content .web .web_content .web_text::after {
+  content: '';
+  height: 90%;
+  border: 3px solid #FFC700;
+  border-style: dashed;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 50%;
+}
+
+.service .service_content .service_text .service_text_content .web .web_content .web_text .web_text_content {
+  margin: 0 auto;
+}
+
+.service .service_content .service_text .service_text_content .web .web_content .web_text .web_text_content ul {
+  line-height: 2.2;
+}
+
+.service .service_content .service_text .service_text_content .web .web_content .web_text .web_text_content ul .web_text_text a {
+  color: #fff;
+  background-color: #FFC700;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 0;
+}
+
+.service .service_content .service_text .service_text_content .web .web_content .web_text .web_text_content ul li {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.service .service_content .service_text .service_text_content .web .web_content .web_text .web_text_content ul li a {
+  width: 60%;
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 2px 30px;
+  margin: 10px 0;
+  border-radius: 60px;
+  border: 3px solid #FFC700;
+  transition: background-color 1s ease;
+}
+
+.service .service_content .service_text .service_text_content .web .web_content .web_text .web_text_content ul li a:hover {
+  color: #fff;
+  background-color: #FFC700;
+  transition: background-color 1s ease;
+}
+
+.service .service_content .service_text .service_text_content .web .web_content .web_text .web_text_content ul li a p {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 1186px) {
+  #service .service {
+    width: 100%;
+  }
+  #service .service .service_content .service_text .service_text_content .brand {
+    width: 100%;
+    margin: 40px 0;
+  }
+  #service .service .service_content .service_text .service_text_content .brand .brand_content .brand_text .brand_text_content {
+    display: flex;
+    justify-content: center;
+  }
+  #service .service .service_content .service_text .service_text_content .brand .brand_content .brand_text .brand_text_content ul {
+    text-align: center;
+  }
+  #service .service .service_content .service_text .service_text_content .brand .brand_content .brand_text .brand_text_content ul li {
+    width: 50%;
+  }
+  #service .service .service_content .service_text .service_text_content .flat {
+    width: 100%;
+    margin: 40px 0;
+  }
+  #service .service .service_content .service_text .service_text_content .flat .flat_content .flat_text .flat_text_content {
+    display: flex;
+    justify-content: center;
+  }
+  #service .service .service_content .service_text .service_text_content .flat .flat_content .flat_text .flat_text_content ul {
+    text-align: center;
+  }
+  #service .service .service_content .service_text .service_text_content .flat .flat_content .flat_text .flat_text_content ul li {
+    width: 8em;
+  }
+  #service .service .service_content .service_text .service_text_content .web {
+    width: 100%;
+    margin: 40px 0;
+  }
+  #service .service .service_content .service_text .service_text_content .web .web_content .web_text .web_text_content {
+    display: flex;
+    justify-content: center;
+  }
+  #service .service .service_content .service_text .service_text_content .web .web_content .web_text .web_text_content ul {
+    text-align: center;
+  }
+  #service .service .service_content .service_text .service_text_content .web .web_content .web_text .web_text_content ul li {
+    width: 50%;
+  }
+}

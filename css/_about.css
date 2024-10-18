@@ -1,0 +1,218 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, sm, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'ZenKakuGothicNew-Black';
+  src: url("../font/ZenKakuGothicNew-Black.ttf");
+}
+
+@font-face {
+  font-family: 'BlackOpsOne-Regular';
+  src: url("../font/BlackOpsOne-Regular.ttf");
+}
+
+.about .about_content, .about .about_content .about_img .about_img_content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  position: relative;
+  width: 1400px;
+}
+
+.about .about_content {
+  padding: 0 130px;
+}
+
+.about .about_content .about_img {
+  width: 50%;
+  position: relative;
+  width: 50%;
+  position: relative;
+  display: flex;
+}
+
+.about .about_content .about_img::after {
+  content: '';
+  width: 166px;
+  border: 3px solid #FFC700;
+  position: absolute;
+  right: -119px;
+  top: 50%;
+}
+
+.about .about_content .about_img::before {
+  content: 'About';
+  position: absolute;
+  font-size: 50px;
+  font-family: ZenKakuGothicNew-Black;
+  font-style: italic;
+  right: -120px;
+  top: 37%;
+}
+
+.about .about_content .about_img .about_img_content {
+  position: relative;
+}
+
+.about .about_content .about_img .about_img_content::after {
+  content: '';
+  width: 436px;
+  height: 436px;
+  position: absolute;
+  background-color: #FFC700;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.about .about_content .about_img .about_img_content::before {
+  content: '';
+  width: 468px;
+  height: 468px;
+  position: absolute;
+  left: 46px;
+  border: 3px solid #FFC700;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.about .about_content .about_img .about_img_content img {
+  width: 458px;
+  height: 458px;
+}
+
+.about .about_content .about_text {
+  width: 50%;
+}
+
+.about .about_content .about_text .about_text_content {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about .about_content .about_text .about_text_content p {
+  writing-mode: vertical-rl;
+  font-family: monospace;
+  font-size: 24px;
+  height: 300px;
+  line-height: 2;
+  padding-left: 60px;
+  margin-left: 60px;
+  border-left: 3px solid #FFC700;
+  border-style: dashed;
+}
+
+@media screen and (max-width: 1160px) {
+  .static-section {
+    height: auto;
+  }
+  .static-section .about {
+    width: 100%;
+    z-index: 2;
+  }
+  .static-section .about .about_content {
+    padding: 60px;
+  }
+  .static-section .about .about_content .about_img {
+    width: auto;
+    display: block;
+  }
+  .static-section .about .about_content .about_img::before {
+    z-index: 2;
+    left: 53%;
+    top: 107%;
+  }
+  .static-section .about .about_content .about_img::after {
+    width: 0px;
+    height: 90px;
+    border: 3px solid #FFC700;
+    left: 50%;
+    top: 97%;
+  }
+  .static-section .about .about_content .about_img .about_img_content::before {
+    left: auto;
+    top: 14px;
+  }
+  .static-section .about .about_content .about_text {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .static-section .about .about_content .about_text .about_text_content {
+    justify-content: center;
+  }
+  .static-section .about .about_content .about_text .about_text_content p {
+    border-left: 0px solid;
+    padding-left: 0px;
+    margin-left: 0px;
+    border-top: 3px solid #FFC700;
+    border-style: dashed;
+    padding-top: 60px;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .static-section .about .about_content .about_img {
+    width: 25%;
+  }
+  .static-section .about .about_content .about_img::after {
+    top: 92%;
+  }
+  .static-section .about .about_content .about_img .about_img_content::before {
+    width: 8em;
+    height: 8em;
+  }
+  .static-section .about .about_content .about_img .about_img_content::after {
+    width: 7em;
+    height: 7em;
+  }
+  .static-section .about .about_content .about_img .about_img_content img {
+    width: 80vw;
+    height: auto;
+  }
+}

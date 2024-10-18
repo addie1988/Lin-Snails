@@ -1,0 +1,96 @@
+@import "_reset.sass"
+
+// ----------------------------------------------------------------    
+
+@font-face
+    font-family: 'ZenKakuGothicNew-Black'
+    src: url('../font/ZenKakuGothicNew-Black.ttf')
+
+@font-face
+    font-family: 'BlackOpsOne-Regular'
+    src: url('../font/BlackOpsOne-Regular.ttf')
+
+$max_1400_max-width: 1400px
+$header_logo: 50%
+$header_menu: 50%
+$min_position_relative: relative
+$min_position_absolute: absolute
+$min_50_font-size: 50px
+$min_60_font-size: 60px
+$min_24_font-size: 24px
+$min_16_font-size: 16px
+$menu_text_font-size: 30px
+$chinese_font: ZenKakuGothicNew-Black
+$main_background-color: #FFC700
+
+%display_flex
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+
+// ----------------------------------------------------------------   
+
+#work
+    height: 100vh
+    @extend %display_flex
+    .work
+        width: $max_1400_max-width
+        position: $min_position_relative
+        z-index: 3
+        .work_content
+            margin: 0 auto
+            .work_button
+                position: $min_position_relative
+                .work_button_content
+                    margin: 0 auto
+                    @extend %display_flex
+                    a
+                        text-decoration: none
+                        position: $min_position_relative
+                        @extend %display_flex
+                        p
+                            color: #fff
+                            display: inline-block
+                            font-size: $min_60_font-size
+                            font-family: $chinese_font
+                        .work_decorate
+                            position: $min_position_absolute
+                            .work_decorate_content
+                                margin: 0 auto
+                                position: $min_position_relative
+                                width: 196px
+                                height: 196px
+                                display: inline-block
+                                border: 4px solid #fff
+                                border-radius: 50%
+                                animation: work_decorate 15s infinite
+                                span
+                                    width: 20px
+                                    height: 20px
+                                    background-color: #fff
+                                    border-radius: 50%
+                                    position: $min_position_absolute
+                                    top: -12px
+                                    left: 45%
+                                    z-index: -1
+
+// ----------------------------------------------------------------       
+
+@keyframes work_decorate
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
+
+// ----------------------------------------------------------------    
+
+@media screen and (max-width: 310px)
+    .work
+        width: 100%
+        .work_content
+            .work_button
+                .work_button_content
+                    a
+                        p
+                            text-align: center
